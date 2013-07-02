@@ -1,0 +1,62 @@
+/*********specific header styles the same for each campaign***************/
+/************mixins and color declarations below for customisation******************/
+
+
+
+/**ign header**/
+#ignHeader {
+  z-index: 99999;
+}
+
+#ignHeader #ignHeader-userBar {
+  background: url(../assets/images/ign_bar.jpg) repeat-x top left;
+  height: 40px;
+//  -moz-box-shadow: 0 0px 5px 3px rgba(0, 0, 0, 0.6);
+//  -webkit-box-shadow: 0 0px 5px 3pxrgba 0, 0, 0, 0.6;
+//  box-shadow: 0 0px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+#ignHeader #ignHeader-userBar #ignHeader-logo {
+  background: url(../assets/images/ign_logo.png) no-repeat center 7px;
+  height: 50px;
+  width: 100px;
+  display: block;
+  margin-top: -2px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+
+#ignHeader #ignHeader-navigation {
+  top: 46px;
+  height: 53px;
+//  -moz-box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+//  -webkit-box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+//  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#ignHeader #ignHeader-navigation .ignHeader-navLinks {
+  padding: 17px 0px;
+}
+
+#ignHeader #ignHeader-navigation .ignHeader-navLinks .ignHeader-navItem a {
+  color: white;
+  text-shadow: 0px 0px 10px #151515;
+}
+
+#ignHeader #ignHeader-navigation #nav-home a:link, #ignHeader #ignHeader-navigation #nav-home a:visited {
+  background-image: url(../assets/images/header-icons.png);
+}
+
+
+.social-btns {
+  margin-bottom: 0px;
+  float: left;
+}
+
+.social-btns li {
+  float: left;
+  margin: 10px 10px 0px 10px;
+}
+/**end ign header**/

@@ -1,0 +1,62 @@
+/*********specific header styles the same for each campaign***************/
+/************mixins and color declarations below for customisation******************/
+/**ign header**/
+/* line 7, ../sass/header-styles.scss */
+#ignHeader {
+  z-index: 99999;
+}
+
+/* line 11, ../sass/header-styles.scss */
+#ignHeader #ignHeader-userBar {
+  background: url(../assets/images/ign_bar.jpg) repeat-x top left;
+  height: 40px;
+}
+
+/* line 19, ../sass/header-styles.scss */
+#ignHeader #ignHeader-userBar #ignHeader-logo {
+  background: url(../assets/images/ign_logo.png) no-repeat center 7px;
+  height: 50px;
+  width: 100px;
+  display: block;
+  margin-top: -2px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/* line 31, ../sass/header-styles.scss */
+#ignHeader #ignHeader-navigation {
+  top: 46px;
+  height: 53px;
+}
+
+/* line 39, ../sass/header-styles.scss */
+#ignHeader #ignHeader-navigation .ignHeader-navLinks {
+  padding: 17px 0px;
+}
+
+/* line 43, ../sass/header-styles.scss */
+#ignHeader #ignHeader-navigation .ignHeader-navLinks .ignHeader-navItem a {
+  color: white;
+  text-shadow: 0px 0px 10px #151515;
+}
+
+/* line 48, ../sass/header-styles.scss */
+#ignHeader #ignHeader-navigation #nav-home a:link, #ignHeader #ignHeader-navigation #nav-home a:visited {
+  background-image: url(../assets/images/header-icons.png);
+}
+
+/* line 53, ../sass/header-styles.scss */
+.social-btns {
+  margin-bottom: 0px;
+  float: left;
+}
+
+/* line 58, ../sass/header-styles.scss */
+.social-btns li {
+  float: left;
+  margin: 10px 10px 0px 10px;
+}
+
+/**end ign header**/

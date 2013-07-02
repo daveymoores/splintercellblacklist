@@ -1,0 +1,20 @@
+David Jonathan Moores - 24/06/2013
+
+This is the Ziff Davis Hub Template
+Version 1.0
+This is a template for starting a integrated projects. The parent folder to this file contains the following:
+
+Age gate
+Competition code (containing the Harkable competition API)
+IGN header
+IGN footer
+GA tracking code
+Facebook, Twitter and Google+ social links
+
+
+Additional components:
+
+Foundation 4
+Sass
+
+Enjoy!
