@@ -1,5 +1,5 @@
 3.2.1 (Media Mark)
-d402f760eb2b2e3a1b95dd8f61bab9c2c682ed2d
+d58fdc42d33b90448b006db66eb94da251243b38
 o:Sass::Tree::RootNode
 :
 @linei:@template"¾!/**main body styles**/
@@ -112,7 +112,7 @@ section.content {
 		}
 
 		img {
-			margin: 20px 0px 20px 18px;
+			margin: 35px 0px 20px 18px;
 
 			&.sam {
 				position: absolute;
@@ -654,7 +654,7 @@ whiteo;;["font-weight;ij;	@;i ;
 [ ;; ;o;*;;+;	@;"0px;,[".column, .columnso;;o;;" ;is;[o;;[o;
 ;@€;is;o;;{ ;0;[o;	;@€;["img;is;0;is;T;	@;i ;
 [o;;["margin;it;	@;i ;
-[ ;; ;o;*;;+;	@;"20px 0px 20px 18pxo;;o;;" ;iv;[o;;[o;
+[ ;; ;o;*;;+;	@;"35px 0px 20px 18pxo;;o;;" ;iv;[o;;[o;
 ;@”;iv;o;;{ ;0;[o;.;@”;ivo;-;@”;["sam;iv;iv;T;	@;i ;
 [o;;["position;iw;	@;i ;
 [ ;; ;o;*;;+;	@;"absoluteo;;["margin;ix;	@;i ;
