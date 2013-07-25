@@ -1,9 +1,53 @@
 /*********specific header styles the same for each campaign***************/
 /************mixins and color declarations below for customisation******************/
 
+/**font declarations**/
+@font-face {
+    font-family: quantico_bold;
+    src: url(../assets/fonts/Quantico-Bold.otf);
+    font-weight:400;
+}
 
+@font-face {
+    font-family: quantico_reg;
+    src: url(../assets/fonts/Quantico-Regular.otf);
+    font-weight:400;
+}
+
+@font-face {
+    font-family: clancy_bold;
+    src: url(../assets/fonts/Clancy_Bold_PS3.ttf);
+    font-weight:400;
+}
+
+@font-face {
+    font-family: tango;
+    src: url(../assets/fonts/TANGOCHARLIE_0.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: din;
+    src: url(../assets/fonts/dinnextltprobold.ttf);
+    font-weight: 400;
+}
+
+.tango {
+  color: white;
+  font-family: 'tango', helvetica, sans-serif;
+}
+
+
+
+/**end font declarations**/
 
 /**ign header**/
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
 #ignHeader {
   z-index: 99999;
 }
@@ -53,6 +97,7 @@
 .social-btns {
   margin-bottom: 0px;
   float: left;
+  line-height: 0px;
 }
 
 .social-btns li {
@@ -60,3 +105,79 @@
   margin: 10px 10px 0px 10px;
 }
 /**end ign header**/
+
+/**Blacklist Menu**/
+nav {
+  height: 70px;
+  background-color: black;
+  
+  .row {
+    padding: 0px 2%;
+    background: black url(../assets/images/nav_bg.jpg) no-repeat top center;
+    position: relative;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px 20px;
+    margin: 0px;
+
+    li {
+      display: block;
+      float:left;
+      width: 15%;
+      padding-top: 25px;
+      height: 70px;
+      text-align: center;
+      font-size: 14px;
+
+      &.active {
+        background: black url(../assets/images/nav_bg-blue.png) repeat-x top left;
+
+        a {
+          color: #08252a;
+          font-family: 'quantico_reg', Helvetica, Sans-serif;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      &.logo {
+        width: 40%;
+        padding-top: 5px;
+      }
+
+      a {
+        color: #ffffff;
+        font-family: 'quantico_reg', Helvetica, Sans-serif;
+
+       -webkit-transition:color 0.3s ease-in;  
+       -moz-transition:color 0.3s ease-in;  
+       -o-transition:color 0.3s ease-in;  
+       transition:color 0.3s ease-in;  
+
+       &:hover {
+          color: #cccccc;
+       }
+
+      }
+    }
+  }
+}
+/**end Blacklist Menu**/
+
+/**pre-order button**/
+
+.pre-order_btn {
+    background: transparent url(../assets/images/game_pre-order.png) top center no-repeat;
+    height: 160px;
+    width: 360px;
+    position: absolute;
+    right: -150px;
+    top: -22px;
+}
+
+
+/**end pre-order button**/

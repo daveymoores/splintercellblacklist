@@ -1,18 +1,63 @@
 /*********specific header styles the same for each campaign***************/
 /************mixins and color declarations below for customisation******************/
+/**font declarations**/
+@font-face {
+  font-family: quantico_bold;
+  src: url(../assets/fonts/Quantico-Bold.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: quantico_reg;
+  src: url(../assets/fonts/Quantico-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: clancy_bold;
+  src: url(../assets/fonts/Clancy_Bold_PS3.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: tango;
+  src: url(../assets/fonts/TANGOCHARLIE_0.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: din;
+  src: url(../assets/fonts/dinnextltprobold.ttf);
+  font-weight: 400;
+}
+
+/* line 35, ../sass/header-styles.scss */
+.tango {
+  color: white;
+  font-family: 'tango', helvetica, sans-serif;
+}
+
+/**end font declarations**/
 /**ign header**/
-/* line 7, ../sass/header-styles.scss */
+/* line 45, ../sass/header-styles.scss */
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+/* line 51, ../sass/header-styles.scss */
 #ignHeader {
   z-index: 99999;
 }
 
-/* line 11, ../sass/header-styles.scss */
+/* line 55, ../sass/header-styles.scss */
 #ignHeader #ignHeader-userBar {
   background: url(../assets/images/ign_bar.jpg) repeat-x top left;
   height: 40px;
 }
 
-/* line 19, ../sass/header-styles.scss */
+/* line 63, ../sass/header-styles.scss */
 #ignHeader #ignHeader-userBar #ignHeader-logo {
   background: url(../assets/images/ign_logo.png) no-repeat center 7px;
   height: 50px;
@@ -25,38 +70,112 @@
   margin-left: -50px;
 }
 
-/* line 31, ../sass/header-styles.scss */
+/* line 75, ../sass/header-styles.scss */
 #ignHeader #ignHeader-navigation {
   top: 46px;
   height: 53px;
 }
 
-/* line 39, ../sass/header-styles.scss */
+/* line 83, ../sass/header-styles.scss */
 #ignHeader #ignHeader-navigation .ignHeader-navLinks {
   padding: 17px 0px;
 }
 
-/* line 43, ../sass/header-styles.scss */
+/* line 87, ../sass/header-styles.scss */
 #ignHeader #ignHeader-navigation .ignHeader-navLinks .ignHeader-navItem a {
   color: white;
   text-shadow: 0px 0px 10px #151515;
 }
 
-/* line 48, ../sass/header-styles.scss */
+/* line 92, ../sass/header-styles.scss */
 #ignHeader #ignHeader-navigation #nav-home a:link, #ignHeader #ignHeader-navigation #nav-home a:visited {
   background-image: url(../assets/images/header-icons.png);
 }
 
-/* line 53, ../sass/header-styles.scss */
+/* line 97, ../sass/header-styles.scss */
 .social-btns {
   margin-bottom: 0px;
   float: left;
+  line-height: 0px;
 }
 
-/* line 58, ../sass/header-styles.scss */
+/* line 103, ../sass/header-styles.scss */
 .social-btns li {
   float: left;
   margin: 10px 10px 0px 10px;
 }
 
 /**end ign header**/
+/**Blacklist Menu**/
+/* line 110, ../sass/header-styles.scss */
+nav {
+  height: 70px;
+  background-color: black;
+}
+/* line 114, ../sass/header-styles.scss */
+nav .row {
+  padding: 0px 2%;
+  background: black url(../assets/images/nav_bg.jpg) no-repeat top center;
+  position: relative;
+}
+/* line 120, ../sass/header-styles.scss */
+nav ul {
+  list-style: none;
+  padding: 0px 20px;
+  margin: 0px;
+}
+/* line 125, ../sass/header-styles.scss */
+nav ul li {
+  display: block;
+  float: left;
+  width: 15%;
+  padding-top: 25px;
+  height: 70px;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 134, ../sass/header-styles.scss */
+nav ul li.active {
+  background: black url(../assets/images/nav_bg-blue.png) repeat-x top left;
+}
+/* line 137, ../sass/header-styles.scss */
+nav ul li.active a {
+  color: #08252a;
+  font-family: 'quantico_reg', Helvetica, Sans-serif;
+}
+/* line 141, ../sass/header-styles.scss */
+nav ul li.active a:hover {
+  color: black;
+}
+/* line 147, ../sass/header-styles.scss */
+nav ul li.logo {
+  width: 40%;
+  padding-top: 5px;
+}
+/* line 152, ../sass/header-styles.scss */
+nav ul li a {
+  color: #ffffff;
+  font-family: 'quantico_reg', Helvetica, Sans-serif;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+/* line 161, ../sass/header-styles.scss */
+nav ul li a:hover {
+  color: #cccccc;
+}
+
+/**end Blacklist Menu**/
+/**pre-order button**/
+/* line 173, ../sass/header-styles.scss */
+.pre-order_btn {
+  background: transparent url(../assets/images/game_pre-order.png) top center no-repeat;
+  height: 160px;
+  width: 360px;
+  position: absolute;
+  right: -150px;
+  top: -22px;
+}
+
+/**end pre-order button**/

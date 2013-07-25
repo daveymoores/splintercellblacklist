@@ -20,64 +20,6 @@ if (isset($_COOKIE["age"]))
 
 ?>
 
-<?php
-
-/////////////////////////////////////////
-// @ Example usage of the HK API
-// @ 15th February 2013
-// @ Author: Ashley Ford
-// @ ashley@harkable.com
-////////////////////////////////////////
-
-include('class/HkCompAPI.class.php');
-
-$competition = new HkCompAPI();
-
-    if(isset($_POST['_submit'])){
-    
-    	$_POST['dob'] = $_POST['_year'].'-'.$_POST['_month'].'-'.$_POST['_day'];
-    
-	    $validation = array(
-	
-	    	//@ Format of the array is as follows:
-	    	//@ Input Value Name
-	    	//@ Error Message
-	    	//@ Required, valid_email, over_18, captcha (value must be blank)    	
-	    	
-			array('fname', 		"Please enter your first name",   			 'required'),
-			array('lname', 		"Please enter your last name",    			 'required'),
-			array('dob',  		"This promotion is open to users over 18!",	 'over_18'),
-			array('email', 		"Please enter a valid email address", 		 'valid_email'),
-			array('terms', 		"Please Accept the Terms &amp; Conditions",	 'required'),
-			array('_captcha',	"We're not sure you're a human...", 		 'captcha')
-	
-		);  
-		
-		// validate for errors
-		$errors = $competition->validate($validation);
-		
-		// validate returns FALSE if no errors are found
-		if($errors===FALSE){
-			// save the data via the api call with the campaign name
-        	$save = $competition->save('ign_injustice');
-        	        	
-        	if(isset($save['_auth']) && $save['_auth']=='failed'){
-	        	echo 'Error Authenticating With the API';     	  	
-        	}
-             
-            // if the data was saved successfully  	
-        	if(isset($save['_saved'])==TRUE){
-	        
-	        //redirect to thankyou page
-	        	
-	        header('location: thankyou.php');
-
-        	}
-          		       
-        }
-                      
-    } 
-?>
 
 
 <!DOCTYPE html>
@@ -109,7 +51,9 @@ $competition = new HkCompAPI();
 	<link rel=apple-touch-icon sizes=114x114 href="apple-touch-icon-114x114.png">
 
 
+    <link rel="stylesheet" href="default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/app.css" />
+
 
     <script src="javascripts/vendor/custom.modernizr.js"></script>
 
@@ -123,8 +67,21 @@ $competition = new HkCompAPI();
 
 </head>
 <body>
+<!-- <section id="debris" data-type="background" data-speed="2"></section>
+<section id="debris_2" data-type="background" data-speed="6"></section>
+<section id="debris_3" data-speed="10"></section> -->
+<section id="hex" data-type="background" data-speed="2"></section>
+<section id="hex_2" data-type="background" data-speed="6"></section>
+<section id="hex_3" data-type="background" data-speed="10"></section>
 
-    <header id="ignHeaderHeader">
+<!--particles-->
+<!-- <section id="particle" data-type="background" data-speed="2"></section>
+<section id="particle_2" data-type="background" data-speed="6"></section>
+<section id="particle_3" data-type="background" data-speed="10"></section> -->
+<!--end particles-->
+
+<article>
+    <header>
 		<div id="ignHeader" class="clear">
 			<ul class="social-btns">
 	                <li>
@@ -144,252 +101,149 @@ $competition = new HkCompAPI();
 				</div>
 
 		</div>
+
+        <nav>
+            <div class="row">
+                <ul class="large-12 columns">
+                    <li><a href="#_">THE GAME</a></li>
+                    <li class="active"><a href="#_">WEAPONS</a></li>
+                    <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
+                    <li><a href="#_">SCREENSHOTS</a></li>
+                    <li><a href="#_">PRE-ORDER</a></li>
+                </ul>
+                <a href="#_"><span class="pre-order_btn"></span></a>
+            </div>
+        </nav>
 	</header>
     
-    
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Ziff Davis Hub Template</h2>
-            <h4>Version 1.0</h4>
+    <!--top instructional section-->
+	<section class="content instructional">
+		<div class="row">
+			<div class="large-12 columns">
+				<img src="assets/images/stb_logo.png" alt="Beat The Blacklist Logo">
+				<img class="sam" src="assets/images/sam.png" alt="Sam Fisher">
+				<div class="holder_instructional">
+					<h3 class="tango">ARE YOU SMART ENOUGH TO JOIN THE ELITE RANKS OF THE <br>FOURTH ECHELON?</h3>
+					<p>Prove your mental acuity by solving one of our four intel puzzles over the next month and you’ll <br>be entered into our grand prize draw to win a weekly spot prize <br>or even a [TOP PRIZE].</p>
+				</div>
+			</div>
 		</div>
-	</div>
-    
-    
-    <!--competition-->
-    <section id="competition" class="standard_container">
-        <div class="row">
-            <div class="large-12 columns">
-                
-            <?php 
+	</section>
+    <!--end instructional section-->
 
-                    if(isset($errors)){
-                        // if there were errors in form processing show them here
-                        echo '<div class="alert alert-error"><h4>Wowzers!</h4><ul>';	       	        
-                            foreach($errors as $error){		        
-                              echo '<li>'.$error.'</li>';  
-                            }	        
-                        echo '</ul></div>';
-                    
-                    }
-            ?>
+    <!--flash component section-->
+    <section class="content flash_wrapper">
+        <div class="large-12 columns">
 
-            <form action="" method="post" class="form-horizontal">
-                <fieldset>
-                <legend>Competition</legend>
-                     <div class="row">
-                        <div class="large-4 columns">
-                            <label>First Name</label>
-                            <input type="text" name="fname" value="<?php if(isset($_POST['fname'])){echo $_POST['fname'];}?>"> 
-                        </div>
+            <div class="btb_game">
+                <div class="btb_holder"><object width="950" height="650" data="http://btb.ubisoft.uk.com/"></object></div>
+            </div>
 
-                        <div class="large-4 columns">
-                            <label>Last Name</label>
-                            <input type="text" name="lname" value="<?php if(isset($_POST['lname'])){echo $_POST['lname'];}?>"> 
-                        </div>
-                     
-                        <div class="large-4 columns">
-                            <label>Email</label>
-                                <input type="text" name="email" value="<?php if(isset($_POST['email'])){echo $_POST['email'];}?>"> 
-                        </div>
-                    </div>
-                    
-                     <div class="row">
-                        <div class="large-4 columns">
-                            <label>Day</label>
-                            <select name="_day" class="span1">
-                                <option value="0">Day</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
-                            
-                        </div>
-                        
-                         <div class="large-4 columns">
-                             <label>Month</label>
-                            <select name="_month" class="span2">
-                                <option value="0">Month</option>
-                                <option value="1">January</option>
-                                <option value="2">February</option>
-                                <option value="3">March</option>
-                                <option value="4">April</option>
-                                <option value="5">May</option>
-                                <option value="6">June</option>
-                                <option value="7">July</option>
-                                <option value="8">August</option>
-                                <option value="9">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
-                        
-                        <div class="large-4 columns">
-                            <label>Year</label>
-                            <select name="_year" class="span2">
-                                <option value="0">Year</option>
-                                <option value="2009">2009</option>
-                                <option value="2008">2008</option>
-                                <option value="2007">2007</option>
-                                <option value="2006">2006</option>
-                                <option value="2005">2005</option>
-                                <option value="2004">2004</option>
-                                <option value="2003">2003</option>
-                                <option value="2002">2002</option>
-                                <option value="2001">2001</option>
-                                <option value="2000">2000</option>
-                                <option value="1999">1999</option>
-                                <option value="1998">1998</option>
-                                <option value="1997">1997</option>
-                                <option value="1996">1996</option>
-                                <option value="1995">1995</option>
-                                <option value="1994">1994</option>
-                                <option value="1993">1993</option>
-                                <option value="1992">1992</option>
-                                <option value="1991">1991</option>
-                                <option value="1990">1990</option>
-                                <option value="1989">1989</option>
-                                <option value="1988">1988</option>
-                                <option value="1987">1987</option>
-                                <option value="1986">1986</option>
-                                <option value="1985">1985</option>
-                                <option value="1984">1984</option>
-                                <option value="1983">1983</option>
-                                <option value="1982">1982</option>
-                                <option value="1981">1981</option>
-                                <option value="1980">1980</option>
-                                <option value="1979">1979</option>
-                                <option value="1978">1978</option>
-                                <option value="1977">1977</option>
-                                <option value="1976">1976</option>
-                                <option value="1975">1975</option>
-                                <option value="1974">1974</option>
-                                <option value="1973">1973</option>
-                                <option value="1972">1972</option>
-                                <option value="1971">1971</option>
-                                <option value="1970">1970</option>
-                                <option value="1969">1969</option>
-                                <option value="1968">1968</option>
-                                <option value="1967">1967</option>
-                                <option value="1966">1966</option>
-                                <option value="1965">1965</option>
-                                <option value="1964">1964</option>
-                                <option value="1963">1963</option>
-                                <option value="1962">1962</option>
-                                <option value="1961">1961</option>
-                                <option value="1960">1960</option>
-                                <option value="1959">1959</option>
-                                <option value="1958">1958</option>
-                                <option value="1957">1957</option>
-                                <option value="1956">1956</option>
-                                <option value="1955">1955</option>
-                                <option value="1954">1954</option>
-                                <option value="1953">1953</option>
-                                <option value="1952">1952</option>
-                                <option value="1951">1951</option>
-                                <option value="1950">1950</option>
-                                <option value="1949">1949</option>
-                                <option value="1948">1948</option>
-                                <option value="1947">1947</option>
-                                <option value="1946">1946</option>
-                                <option value="1945">1945</option>
-                                <option value="1944">1944</option>
-                                <option value="1943">1943</option>
-                                <option value="1942">1942</option>
-                                <option value="1941">1941</option>
-                                <option value="1940">1940</option>
-                                <option value="1939">1939</option>
-                                <option value="1938">1938</option>
-                                <option value="1937">1937</option>
-                                <option value="1936">1936</option>
-                                <option value="1935">1935</option>
-                                <option value="1934">1934</option>
-                                <option value="1933">1933</option>
-                                <option value="1932">1932</option>
-                                <option value="1931">1931</option>
-                                <option value="1930">1930</option>
-                                <option value="1929">1929</option>
-                                <option value="1928">1928</option>
-                                <option value="1927">1927</option>
-                                <option value="1926">1926</option>
-                                <option value="1925">1925</option>
-                                <option value="1924">1924</option>
-                                <option value="1923">1923</option>
-                                <option value="1922">1922</option>
-                                <option value="1921">1921</option>
-                                <option value="1920">1920</option>
-                                <option value="1919">1919</option>
-                                <option value="1918">1918</option>
-                                <option value="1917">1917</option>
-                                <option value="1916">1916</option>
-                                <option value="1915">1915</option>
-                                <option value="1914">1914</option>
-                                <option value="1913">1913</option>
-                                <option value="1912">1912</option>
-                                <option value="1911">1911</option>
-                                <option value="1910">1910</option>
-                                <option value="1909">1909</option>
-                            </select>
-
-                         </div>
-                    </div>
-
-                    <div class="clearfix"></div>
-                    <div class="control-group full">
-                        <div class="controls">
-                            <label class="checkbox"><input type="checkbox" name="terms" value="1">Terms &amp; Conditions</label>
-                            <span class="help-block">I confirm that I am a UK resident over the age of 18 and have <a href="tandc.php">read and understood the terms and conditions</a></span>
-                        </div>
-                    </div>
-                    
-                    <div class="control-group full">
-                        <div class="controls">
-                            <label class="checkbox"><input type="checkbox" name="subscribe" value="1">Newsletter</label>
-                            <span class="help-block">I agree that my email details can be used by IGN Entertainment and Warner Bros. Entertainment UK Limited to keep me informed of exciting new products, promotions and services until I choose otherwise.</span>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    
-                    <div class="control-group full">
-                        <div class="controls">
-                            <input type="hidden" name="_captcha" value=""> 
-                            <input type="submit" value="Enter" class="button" name="_submit">
-                        </div>
-                    </div>
-                    </fieldset>
-                </form>  
-            </div> <!-- container -->
         </div>
     </section>
-    <!--end competition section-->
+    <!--end flash component section-->
+
+    <!--weapons section-->
+    <section class="content weapons" data-type="background" data-speed="2">
+     <div class="row">
+        <div class="large-12 columns">
+            <h2 class="black">GADGETS</h2>
+
+
+			<div class="file_cont">
+				<div class="name folder_1"><a href="#_">EMP</a></div>
+				<div class="name folder_2"><a href="#_">TRIROTOR</a></div>
+				<div class="name folder_3"><a href="#_">GOGGLES</a></div>
+				<div class="name folder_4"><a href="#_">STICKY CAM</a></div>
+				<div class="name folder_5"><a href="#_">STICKY NOISEMAKER</a></div>
+			</div>
+
+
+        	<div class="file_cont">
+				<div class="file folder_1"><img src="assets/gadgets/EMP.png" alt="EMP" ></div>
+				<div class="file folder_2"><img src="assets/gadgets/TRIROTOR.png" alt="TRIROTOR" ></div>
+				<div class="file folder_3"><img src="assets/gadgets/GOGGLES.png" alt="GOGGLES" ></div>
+				<div class="file folder_4"><img src="assets/gadgets/STICKY_CAM.png" alt="STICKY CAM" ></div>
+				<div class="file folder_5"><img src="assets/gadgets/STICKY_NOISEMAKER.png" alt="STICKY NOISEMAKER" ></div>
+			</div>
+
+			<div id="final_gadg-cont">
+				<div class="web"><img src="assets/images/web.png"></div>
+				<div class="libya"><span>EMP</span></div>
+				<div class="big_folder"><img src="" alt="" ></div>
+
+				<h4 data-text="EMP">RECON &amp; DISTRACTION</h4>
+				<p>Sticks to walls and delivers a localized electromagnetic pulse, disabling lights and Security Systems nearby. Use it to create Shadow paths to hide from hostiles, or target Power Boxes near laser trip wires to shut them down. Hostiles are unaffected by the pulse, but will investigate when they see lights shutting off.</p>
+			</div>
+
+        </div>
+    </section>
+    <!--end weapons section-->
+
+    <!--screenshot section-->
+    <section class="content screenshots" data-type="background" data-speed="2">
+    	<div class="row">
+        <div class="large-12 columns">
+        	<h2>SCREENSHOTS</h2>
+
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="assets/carousel_images/slide_1.jpg" data-thumb="assets/carousel_images/slide_1.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_2.jpg" data-thumb="assets/carousel_images/slide_2.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_3.jpg" data-thumb="assets/carousel_images/slide_3.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_4.jpg" data-thumb="assets/carousel_images/slide_4.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_5.jpg" data-thumb="assets/carousel_images/slide_5.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_6.jpg" data-thumb="assets/carousel_images/slide_6.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_7.jpg" data-thumb="assets/carousel_images/slide_7.jpg" alt="" />
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+    <!--end screenshot section-->
+
+    <!--about section-->
+    <section class="content the_game">
+    	<div class="row">
+        	<div class="large-12 columns">
+            	<div class="about_container">
+            		
+            		<h2>ABOUT THE GAME</h2>
+            		<span class="empty_block"><span class="full_block"></span></span>
+
+            		<p>The United States has a military presence in two thirds of the countries around the world. A group of 12 have had enough and initiate a terror ultimatum called the Blacklist – a deadly countdown of escalating terrorist attacks on US interests. Sam Fisher is the leader of the newly formed Fourth Echelon unit: a clandestine unit that answers solely to the President of the United States. Sam and his team must hunt down these terrorists by any means necessary, and stop the Blacklist countdown before it reaches zero.</p>
+            		<br>
+            		<p>A load of secondary info that relates to ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+
+            		<div class="pre-order_section">
+            			<img class="logo" src="assets/images/sc_logo-pre-order.png" alt="">
+            			<div class="clearfix"></div>
+            			<img src="assets/images/special_packshots.png" alt="">
+            			<img class="sc_button" src="assets/images/pre_order-game.png" alt="">
+            			<img class="game_packs" src="assets/images/game_packshots.png" alt="">
+            		</div>
+            	</div>
+        	</div>
+    	</div>
+    </section>
+    <!--end about section-->
+
+    <!--site footer-->
+
+    <footer>
+        <div class="top_btn"><a href="#_">TOP</a></div>
+        <div class="row">
+            <div class="large-12 columns">
+                <img class="logos" src="assets/images/logos.jpg" alt="All logos" />
+
+                <p class="small_text">© 2002–2013 Ubisoft Entertainment. All Rights Reserved. Tom Clancy’s, Splinter Cell, Blacklist, Sam Fisher, the Soldier Icon, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. 
+KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Microsoft group of companies and are used under license from Microsoft. “PlayStation” and “PS3” are trademarks or registered trademarks of Sony Computer Entertainment Inc. WiiU is a trademark of Nintendo. © 2012 Nintendo. </p>
+                
+            </div>
+        </div>
+    </footer>
+    <!--end site footer-->
 
     
     <!-- start footer -->    
@@ -407,12 +261,15 @@ $competition = new HkCompAPI();
         </div>
     </div>
     <!--end footer-->
+</article>
     
-  <script>
+  <!--script>
   document.write('<script src=' +
   ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
   '.js><\/script>')
-  </script>
+  </script-->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   
   <script src="javascripts/foundation/foundation.js"></script>
 	
@@ -443,10 +300,237 @@ $competition = new HkCompAPI();
 	<script src="javascripts/foundation/foundation.tooltips.js"></script>
 	
 	<script src="javascripts/foundation/foundation.topbar.js"></script>
+
+	<script src="javascripts/vendor/jquery.knob.js"></script>
+
+    <script src="javascripts/vendor/transit.js"></script>	
+
+    <script type="text/javascript" src="javascripts/vendor/jquery.nivo.slider.js"></script>
 	
   
   <script>
     $(document).foundation();
+  </script>
+
+  <script>
+
+  	//code for switch backgrounds on nav items
+  	$(document).ready(function(){
+
+  		$('nav').on('click', 'li', function(){
+  			
+  			var $this = $(this);
+
+  			$('nav').find('.active').removeClass('active');
+
+  			if($this.hasClass('logo') !== true) {
+
+  				$this.addClass('active');
+
+  			}
+  		
+  		});
+
+  	});
+
+
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+        	effect: 'boxRainReverse', // Specify sets like: 'fold,fade,sliceDown'
+	        boxCols: 10, // For box animations
+	        boxRows: 8, // For box animations
+	        pauseTime: 6000,
+	        pauseOnHover: true, // Stop animation while hovering
+        	manualAdvance: true // Force manual transitions
+        });
+    });
+
+
+    $(document).ready(function(){
+        $('section[data-type="background"]').each(function(){
+            var $bgobj = $(this); // assigning the object
+         
+            $(window).scroll(function() {
+                var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+                 
+                // Put together our final background position
+                var coords = '50% '+ yPos + 'px';
+     
+                // Move the background
+                $bgobj.css({ backgroundPosition: coords });
+            }); 
+        });
+
+        $('section#debris_3').each(function(){
+            var $bgobj = $(this); // assigning the object
+         
+            $(window).scroll(function() {
+                var yPos = 400-($(window).scrollTop() / $bgobj.data('speed')); 
+                 
+                // Put together our final background position
+                var coords = '50% '+ yPos + 'px';
+     
+                // Move the background
+                $bgobj.css({ backgroundPosition: coords });
+            }); 
+        });      
+    });
+
+  </script>
+
+  <script>
+
+  	//get file name
+  //move: file 1 - top right, file two - right, file 
+
+  $(document).ready(function(){
+
+  	function spin(cName){
+
+  	      var elems = document.getElementsByClassName(cName);
+
+	      var increase = Math.PI * 2 / elems.length;
+	      var x = 0, y = 0, angle = 0;
+
+	      for (var i = 0; i < elems.length; i++) {
+	          var elem = elems[i];
+	          // modify to change the radius and position of a circle
+	          x = 200 * Math.cos(angle) + 100;
+	          y = 200 * Math.sin(angle) + 100;
+	          elem.style.position = 'absolute';
+	          elem.style.left = x + 'px';
+	          elem.style.top = y + 'px';
+	          //need to work this part out
+	          var rot = 90 + (i * (360 / elems.length));
+	          // elem.style['-moz-transform'] = "rotate("+rot+"deg)";
+	          // elem.style.MozTransform = "rotate("+rot+"deg)";
+	          // elem.style['-webkit-transform'] = "rotate("+rot+"deg)";
+	          // elem.style['-o-transform'] = "rotate("+rot+"deg)";
+	          // elem.style['-ms-transform'] = "rotate("+rot+"deg)";
+	          angle += increase;
+	          console.log(angle);
+	      }
+
+  	}
+
+  	spin('file');
+  	spin('name');
+
+
+  //animate direction
+	 $('.file').mouseover(function(){
+
+	    var fileNum = $(this).attr('class').charAt(12);
+	    // var topMov,
+	    //     leftMov;
+
+	    // switch(fileNum)
+	    // {
+	    // case '1':
+	    //   topMov = '+=0px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // case '2':
+	    //   topMov = '+=5px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // case '3':
+	    //   topMov = '+=5px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // case '4':
+	    //   topMov = '-=0px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // case '5':
+	    //   topMov = '-=5px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // case '6':
+	    //   topMov = '-=5px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // }
+
+	    // console.log(topMov);
+	    // console.log(leftMov);
+	    // console.log(fileNum);
+
+	      // $(this).stop().animate({
+
+	      //   left: leftMov,
+	      //   top: topMov
+
+	      // }, 200, 'linear');
+
+
+	  });
+
+	    $('.file').mouseout(function(){
+
+	        var fileNum = $(this).attr('class').charAt(12);
+	    // var topMov,
+	    //     leftMov;
+
+	    // switch(fileNum)
+	    // {
+	    // case '1':
+	    //   topMov = '-=0px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // case '2':
+	    //   topMov = '-=5px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // case '3':
+	    //   topMov = '-=5px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // case '4':
+	    //   topMov = '+=0px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // case '5':
+	    //   topMov = '+=5px';
+	    //   leftMov = '+=5px';
+	    //   break;
+	    // case '6':
+	    //   topMov = '+=5px';
+	    //   leftMov = '-=5px';
+	    //   break;
+	    // }
+
+	    //   $(this).stop().animate({
+
+	    //     left: leftMov,
+	    //     top: topMov
+
+	    //   }, 300, 'linear');
+
+
+	  });
+
+	  $('.file').on('click', 'img', function(){
+
+	  	var gadget = $(this).attr('src');
+	  	var gadgName = $(this).attr('alt');
+
+	  	console.log(gadget);
+
+	    $('.file_cont').transition({ opacity: 0});
+	    $('.big_folder').children().attr('src', gadget).end().show().delay(300).transition({ opacity: 1 });
+	    $('.libya').children().text(gadgName).end().delay(300).transition({ opacity: 1, top: 210 });
+	    $('.web').delay(300).transition({ opacity: 1}, 200);
+	  });
+
+	   $('.big_folder').on('click', function(){
+	    $('.big_folder').transition({ opacity: 0});
+	    $('.file_cont').show().delay(300).transition({ opacity: 1 }, 1000);
+	    $('.libya').transition({ opacity: 0, top: 240 });
+	    $('.web').delay(300).transition({ opacity: 0}, 200);
+	  });
+});
+
   </script>
     
   <!--begin GA script-->

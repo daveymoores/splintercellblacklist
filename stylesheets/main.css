@@ -1,0 +1,504 @@
+/**main body styles**/
+/* line 3, ../sass/main.scss */
+body {
+  background: black url(../assets/images/background_blue-fade.jpg) no-repeat fixed top center;
+}
+
+/* line 7, ../sass/main.scss */
+article {
+  background: transparent url(../assets/images/grid_pattern.png) top center repeat;
+  position: relative;
+  width: 1580px;
+  overflow: hidden;
+  margin: 0px auto;
+  display: block;
+}
+
+/* line 16, ../sass/main.scss */
+section.content {
+  height: 650px;
+  margin: 85px auto;
+  width: 100%;
+}
+/* line 21, ../sass/main.scss */
+section.content h2 {
+  font-family: 'tango', Helvetica, Sans-serif;
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 23px;
+}
+/* line 28, ../sass/main.scss */
+section.content h2.black {
+  color: black;
+}
+/* line 33, ../sass/main.scss */
+section.content.weapons {
+  background-color: white;
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: white url(../assets/images/weapons_bg.jpg) 50% 0 repeat fixed;
+}
+/* line 42, ../sass/main.scss */
+section.content.screenshots {
+  background-color: black;
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: black url(../assets/images/screenshot_bg.jpg) 50% 0 repeat fixed;
+}
+/* line 51, ../sass/main.scss */
+section.content.flash_wrapper {
+  margin: 0px auto 85px;
+  height: 690px;
+}
+/* line 55, ../sass/main.scss */
+section.content.flash_wrapper .btb_game {
+  height: 690px;
+  background: url(../assets/images/flash_frame.png) no-repeat center;
+}
+/* line 59, ../sass/main.scss */
+section.content.flash_wrapper .btb_game .btb_holder {
+  height: 649px;
+  width: 948px;
+  background-color: black;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 19px auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -473px;
+}
+/* line 75, ../sass/main.scss */
+section.content.instructional {
+  height: 400px;
+  margin: 100px auto 0px;
+}
+/* line 78, ../sass/main.scss */
+section.content.instructional .holder_instructional {
+  background: url(../assets/images/instructional_wrapper.png) no-repeat center;
+  height: 180px;
+  padding: 20px 0px 0px 35px;
+}
+/* line 83, ../sass/main.scss */
+section.content.instructional .holder_instructional h3 {
+  font-size: 18px;
+}
+/* line 87, ../sass/main.scss */
+section.content.instructional .holder_instructional p {
+  color: white;
+  font-weight: normal;
+  font-size: 13px;
+}
+/* line 94, ../sass/main.scss */
+section.content.instructional .column, section.content.instructional .columns {
+  padding: 0px;
+}
+/* line 98, ../sass/main.scss */
+section.content.instructional img {
+  margin: 20px 0px 20px 18px;
+}
+/* line 101, ../sass/main.scss */
+section.content.instructional img.sam {
+  position: absolute;
+  margin: -30px 0px 0px 15px;
+}
+
+/**end main body styles**/
+/**debris parallax background**/
+/**
+
+#debris, #debris_2, #debris_3 {
+	background: url(../assets/images/debris.png) 50% 0 no-repeat fixed;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#debris_2 {
+	background: url(../assets/images/debris_2.png) 50% 0 no-repeat fixed;
+}
+
+#debris_3 {
+	background: url(../assets/images/debris_3.png) 50% 400px no-repeat fixed;
+}
+
+**/
+/* line 135, ../sass/main.scss */
+#hex, #hex_2, #hex_3 {
+  background: url(../assets/images/hexagon_bg-v1.png) 50% 0 no-repeat fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 142, ../sass/main.scss */
+#hex {
+  background: url(../assets/images/debris_4.png) 50% 0px no-repeat fixed;
+}
+
+/* line 146, ../sass/main.scss */
+#hex_2 {
+  background: url(../assets/images/hexagon_bg-v1.png) 50% 0px no-repeat fixed;
+}
+
+/* line 150, ../sass/main.scss */
+#hex_3 {
+  background: url(../assets/images/hexagon_bg-v2.png) 50% 30px no-repeat fixed;
+  opacity: 0.85;
+}
+
+/**
+#particle, #particle_2, #particle_3 {
+	background: url(../assets/images/particle.png) 50% 0 no-repeat fixed;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#particle {
+	background: url(../assets/images/particle.png) 50% 0px no-repeat fixed;
+}
+
+#particle_2 {
+	background: url(../assets/images/particle.png) 50% 0px no-repeat fixed;
+}
+
+#particle_3 {
+	background: url(../assets/images/particle.png) 50% 30px no-repeat fixed;
+	opacity: 0.85;
+}
+
+**/
+/**end debris parallax background**/
+/**slider styles**/
+/* line 181, ../sass/main.scss */
+.slider-wrapper {
+  width: 905px;
+  margin: 20px auto;
+}
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* The Nivo Slider styles */
+/* line 196, ../sass/main.scss */
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* line 202, ../sass/main.scss */
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none;
+}
+
+/* line 208, ../sass/main.scss */
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+/* line 215, ../sass/main.scss */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+  background: white;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/* The slices and boxes in the Slider */
+/* line 231, ../sass/main.scss */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+
+/* line 238, ../sass/main.scss */
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/* line 244, ../sass/main.scss */
+.nivo-box img {
+  display: block;
+}
+
+/* Caption styles */
+/* line 247, ../sass/main.scss */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 265, ../sass/main.scss */
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+
+/* line 269, ../sass/main.scss */
+.nivo-caption a {
+  display: inline !important;
+}
+
+/* line 272, ../sass/main.scss */
+.nivo-html-caption {
+  display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+/* line 276, ../sass/main.scss */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+/* line 282, ../sass/main.scss */
+.nivo-prevNav {
+  left: 0px;
+}
+
+/* line 285, ../sass/main.scss */
+.nivo-nextNav {
+  right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+/* line 289, ../sass/main.scss */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* line 293, ../sass/main.scss */
+.nivo-controlNav a {
+  cursor: pointer;
+}
+
+/* line 296, ../sass/main.scss */
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+/* line 304, ../sass/main.scss */
+.clear {
+  clear: both;
+}
+
+/**end slider styles**/
+/**gadgets functionality styles**/
+/* line 311, ../sass/main.scss */
+.file, .name {
+  background-size: 50% 50%;
+  height: AUTO;
+  width: 180px;
+  display: block;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+/* line 319, ../sass/main.scss */
+.file:hover, .name:hover {
+  cursor: pointer;
+}
+
+/* line 324, ../sass/main.scss */
+.name {
+  margin-left: 270px;
+  margin-top: 180px;
+}
+/* line 329, ../sass/main.scss */
+.name a {
+  font-family: 'din', Helvetica, sans-serif;
+  color: black;
+  padding: 2px;
+  font-size: 30px;
+  opacity: 0.1;
+  text-align: center;
+  float: right;
+}
+
+/*.folder_1 {
+	background: transparent url('../assets/gadgets/EMP.png') no-repeat;
+}
+
+.folder_2 {
+	background: transparent url('../assets/gadgets/GOOGLES.png') no-repeat;
+}
+
+.folder_3 {
+	background: transparent url('../assets/gadgets/STICKY_CAM.png') no-repeat;
+}
+
+.folder_4 {
+	background: transparent url('../assets/gadgets/STICKY_NOISEMAKER.png') no-repeat;
+}
+
+.folder_5 {
+	background: transparent url('../assets/gadgets/TRIROTOR.png') no-repeat;
+}*/
+/* line 364, ../sass/main.scss */
+.big_folder {
+  height: auto;
+  width: auto;
+  margin-left: 354px;
+  margin-top: 170px;
+  display: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 200;
+  position: absolute;
+}
+
+/* line 377, ../sass/main.scss */
+.file_cont {
+  position: absolute;
+  z-index: 999;
+  margin-top: -110px;
+}
+
+/* line 383, ../sass/main.scss */
+.libya {
+  position: absolute;
+  right: 75px;
+  top: 230px;
+  z-index: 100;
+  opacity: 0;
+  font-size: 100px;
+  text-align: right;
+  float: right;
+  color: black;
+  font-family: 'din', Helvetica, sans-serif;
+}
+
+/* line 396, ../sass/main.scss */
+.web {
+  position: absolute;
+  right: 75px;
+  top: 120px;
+  z-index: 100;
+  opacity: 0;
+}
+
+/**end gadget styles**/
+/**pre-order section**/
+/* line 410, ../sass/main.scss */
+section.the_game .about_container {
+  background: url(../assets/images/about_bg.jpg);
+  margin: 0px 10px;
+  padding: 15px;
+}
+/* line 415, ../sass/main.scss */
+section.the_game .about_container h2 {
+  background: transparent url(../assets/images/opaque_grn.png) repeat;
+  margin: 0px;
+}
+/* line 420, ../sass/main.scss */
+section.the_game .about_container .empty_block {
+  border: 1px solid #66cccc;
+  width: 100%;
+  height: 4px;
+  display: block;
+}
+/* line 427, ../sass/main.scss */
+section.the_game .about_container .full_block {
+  width: 30%;
+  background-color: #66cccc;
+  height: 3px;
+  display: block;
+  float: right;
+  margin-bottom: 15px;
+}
+/* line 436, ../sass/main.scss */
+section.the_game .about_container p {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+/* line 444, ../sass/main.scss */
+section.the_game .about_container .pre-order_section img {
+  margin: 70px auto 0px;
+}
+/* line 449, ../sass/main.scss */
+section.the_game .about_container .pre-order_section img.logo {
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin-left: -175px;
+  margin-top: 0px;
+}
+/* line 457, ../sass/main.scss */
+section.the_game .about_container .pre-order_section img.game_packs {
+  position: absolute;
+  right: 23px;
+}
+/* line 462, ../sass/main.scss */
+section.the_game .about_container .pre-order_section img.sc_button {
+  margin-left: 65px;
+}
+
+/**end pre-order section**/
+@media only screen and (max-width: 1050px) {
+  /* line 472, ../sass/main.scss */
+  article {
+    width: 1050px;
+  }
+}
+@media only screen and (max-width: 1580px) {
+  /* line 478, ../sass/main.scss */
+  article {
+    width: 100%;
+  }
+}
