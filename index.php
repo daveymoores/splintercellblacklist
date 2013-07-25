@@ -163,8 +163,8 @@ if (isset($_COOKIE["age"]))
 				<div class="file folder_1"><img src="assets/gadgets/EMP.png" alt="EMP" ></div>
 				<div class="file folder_2"><img src="assets/gadgets/TRIROTOR.png" alt="TRIROTOR" ></div>
 				<div class="file folder_3"><img src="assets/gadgets/GOGGLES.png" alt="GOGGLES" ></div>
-				<div class="file folder_4"><img src="assets/gadgets/STICKY_CAM.png" alt="STICKY CAM" ></div>
-				<div class="file folder_5"><img src="assets/gadgets/STICKY_NOISEMAKER.png" alt="STICKY NOISEMAKER" ></div>
+				<div class="file folder_4"><img src="assets/gadgets/STICKY_CAM.png" alt="STICKY-CAM" ></div>
+				<div class="file folder_5"><img src="assets/gadgets/STICKY_NOISEMAKER.png" alt="STICKY-NOISEMAKER" ></div>
 			</div>
 
 			<div id="final_gadg-cont">
@@ -172,8 +172,37 @@ if (isset($_COOKIE["age"]))
 				<div class="libya"><span>EMP</span></div>
 				<div class="big_folder"><img src="" alt="" ></div>
 
-				<h4 data-text="EMP">RECON &amp; DISTRACTION</h4>
-				<p>Sticks to walls and delivers a localized electromagnetic pulse, disabling lights and Security Systems nearby. Use it to create Shadow paths to hide from hostiles, or target Power Boxes near laser trip wires to shut them down. Hostiles are unaffected by the pulse, but will investigate when they see lights shutting off.</p>
+				<div data-name="EMP" class="gadget_info hidden">
+					<h4>RECON &amp; DISTRACTION</h4>
+					<p>Sticks to walls and delivers a localized electromagnetic pulse, disabling lights and Security Systems nearby. Use it to create Shadow paths to hide from hostiles, or target Power Boxes near laser trip wires to shut them down. Hostiles are unaffected by the pulse, but will investigate when they see lights shutting off.</p>
+				</div>
+				
+				<div data-name="TRIROTOR" class="gadget_info hidden">
+					<h4>RECON &amp; DISTRACTION</h4>
+					<p>A remote-pilotable flying drone that fires Sticky Shocker darts. Its rotors can be heard by hostiles if you fly too close.</p>
+<p>Use the Tri-Rotor to:<br>
+Scout out areas and Mark hostiles, or attract enemies.</p>
+<p>Upgrade to gain the ability Self-Destruct and emit sonar pulses
+Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators cannot jam the Tri-Rotor’s main video frequency.</p>
+					
+				</div>
+				
+				<div data-name="GOGGLES" class="gadget_info hidden">
+					<h4>VISION MODES</h4>
+					<p>Goggles let you see things you otherwise can’t. By default, your Goggles offer Night Vision mode, so you can see clearly while hidden in the shadows. Buy more advanced goggles to add Sonar Vision mode.</p>
+					<h4>SONAR VISION</h4>
+					<p>Sonar goggles periodically emit a supersonic pulse to detect hostiles behind walls. They can also detect Mines and Security Systems. Upgrade your Sonar Goggles to increase their range and sensitivity. On Perfectionist difficulty, Sonar Goggles cannot see through walls.</p>
+				</div>
+				
+				<div data-name="STICKY-CAM" class="gadget_info hidden">
+					<h4>RECON &amp; DISTRACTION</h4>
+					<p>A remote camera that can be thrown onto walls or other surfaces to offer a second set of eyes. Use it to watch your own back, or scout from new vantage points. Once upgraded, the camera can also Self-Destruct to stun or kill nearby hostiles.</p>
+				</div>
+				
+				<div data-name="STICKY-NOISEMAKER" class="gadget_info hidden">
+					<h4>RECON &amp; DISTRACTION</h4>
+					<p>Use it to create an opening to slip through patrols, or lure hostiles into a trap. This tiny speaker can be thrown onto walls and surfaces to distract guards from their posts.</p>
+				</div>
 			</div>
 
         </div>
@@ -336,12 +365,12 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
     $(window).load(function() {
         $('#slider').nivoSlider({
-        	effect: 'boxRainReverse', // Specify sets like: 'fold,fade,sliceDown'
-	        boxCols: 10, // For box animations
-	        boxRows: 8, // For box animations
+        	effect: 'boxRainReverse', 
+	        boxCols: 10, 
+	        boxRows: 8, 
 	        pauseTime: 6000,
-	        pauseOnHover: true, // Stop animation while hovering
-        	manualAdvance: true // Force manual transitions
+	        pauseOnHover: true, 
+        	manualAdvance: true 
         });
     });
 
@@ -509,6 +538,8 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 
 	  });
+	  
+	  var parDiv = $('#final_gadg-cont');
 
 	  $('.file').on('click', 'img', function(){
 
@@ -517,17 +548,47 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 	  	console.log(gadget);
 
-	    $('.file_cont').transition({ opacity: 0});
-	    $('.big_folder').children().attr('src', gadget).end().show().delay(300).transition({ opacity: 1 });
-	    $('.libya').children().text(gadgName).end().delay(300).transition({ opacity: 1, top: 210 });
-	    $('.web').delay(300).transition({ opacity: 1}, 200);
+	    $('.file_cont').animate({ opacity: 0});
+	    parDiv.find('.big_folder').children().attr('src', gadget).end().show().delay(300).animate({ opacity: 1 });
+	    parDiv.find('.libya').children().text(gadgName).end().delay(300).animate({ opacity: 1, top: 100 });
+	    parDiv.find('.web').delay(300).animate({ opacity: 1}, 200);
+		
+		parDiv.find("[data-name='" + gadgName + "']").removeClass('hidden').animate({ opacity: 1, bottom: 0});
+		
+	  });
+	  
+	  function findLabel(elem){
+		  var folderName = elem.attr('class');
+		  var lastChar = folderName.slice(-1);
+		  
+		  return lastChar;
+	  }
+	  
+	  $('.file').mouseover(function(){	  
+		 
+		  var lastChar = findLabel($(this));
+		  $('.name.folder_' + lastChar).find('a').stop().animate({ opacity : 1 }, 200);  
+
+	  });
+	  
+	  $('.file').mouseout(function(){
+		  
+		  var lastChar = findLabel($(this));	  
+		  $('.name.folder_' + lastChar).find('a').stop().animate({ opacity : 0.1 }, 800);  
+
 	  });
 
-	   $('.big_folder').on('click', function(){
-	    $('.big_folder').transition({ opacity: 0});
-	    $('.file_cont').show().delay(300).transition({ opacity: 1 }, 1000);
-	    $('.libya').transition({ opacity: 0, top: 240 });
-	    $('.web').delay(300).transition({ opacity: 0}, 200);
+	  parDiv.on('click', '.big_folder', function(){
+		   
+	    parDiv.find('.big_folder').animate({ opacity: 0});
+	    $('.file_cont').show().delay(300).animate({ opacity: 1 }, 1000);
+	    parDiv.find('.libya').animate({ opacity: 0, top: 60 });
+	    parDiv.find('.web').delay(300).animate({ opacity: 0}, 50);
+		
+		parDiv.find('.gadget_info').animate({ opacity: 0, bottom: 50}, function(){
+			$(this).addClass('hidden');
+		});
+		
 	  });
 });
 
