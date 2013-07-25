@@ -1,8 +1,8 @@
 3.2.1 (Media Mark)
-13f1e2132b0ddaf8ee93889c7545a7da8b6274a6
+d402f760eb2b2e3a1b95dd8f61bab9c2c682ed2d
 o:Sass::Tree::RootNode
 :
-@linei:@template"¿!/**main body styles**/
+@linei:@template"æ!/**main body styles**/
 
 body {
 	background: black url(../assets/images/background_blue-fade.jpg) no-repeat fixed top center;
@@ -392,7 +392,7 @@ section.content {
 
 .file_cont {
 	position: absolute;
-	z-index: 999;
+	z-index: 99;
 	margin-top: -110px;
 }
 
@@ -413,7 +413,7 @@ section.content {
 	position: absolute;
 	right: 75px;
 	top: 120px;
-	z-index: 100;
+	z-index: 10;
 	opacity: 0;
 }
 
@@ -992,7 +992,7 @@ width;iz;	@;i ;
 ;@	;iÖ;o;;{ ;0;[o;-;@	;["file_cont;iÖ;iÖ;T;	@;i ;
 [o;;["position;iÜ;	@;i ;
 [ ;; ;o;*;;+;	@;"absoluteo;;["z-index;iá;	@;i ;
-[ ;; ;o;*;;+;	@;"999o;;["margin-top;ià;	@;i ;
+[ ;; ;o;*;;+;	@;"99o;;["margin-top;ià;	@;i ;
 [ ;; ;o;/;0"-110px;ià;	@;1[ ;iç;2["px;,[".file_conto;;o;;" ;iã;[o;;[o;
 ;@'	;iã;o;;{ ;0;[o;-;@'	;["
 libya;iã;iã;T;	@;i ;
@@ -1023,7 +1023,7 @@ right;iö;	@;i ;
 [ ;; ;o;*;;+;	@;"	75pxo;;["top;iõ;	@;i ;
 [ ;; ;o;*;;+;	@;"
 120pxo;;["z-index;iú;	@;i ;
-[ ;; ;o;*;;+;	@;"100o;;["opacity;iù;	@;i ;
+[ ;; ;o;*;;+;	@;"10o;;["opacity;iù;	@;i ;
 [ ;; ;o;*;;+;	@;"0;,["	.webo;;o;;" ;i†;[o;;[o;
 ;@°	;i†;o;;{ ;0;[o;-;@°	;["hidden;i†;i†;T;	@;i ;
 [o;;["display;i°;	@;i ;

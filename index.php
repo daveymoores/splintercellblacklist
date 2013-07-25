@@ -102,16 +102,16 @@ if (isset($_COOKIE["age"]))
 
 		</div>
 
-        <nav>
+        <nav id="nav" class="fixedNav">
             <div class="row">
                 <ul class="large-12 columns">
-                    <li><a href="#_">THE GAME</a></li>
-                    <li class="active"><a href="#_">WEAPONS</a></li>
+                    <li data-pos="weapons"><a href="#_">WEAPONS</a></li>
+                    <li class="active" data-pos="screenshots"><a href="#_">SCREENSHOTS</a></li>
                     <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
-                    <li><a href="#_">SCREENSHOTS</a></li>
-                    <li><a href="#_">PRE-ORDER</a></li>
+                    <li data-pos="the_game"><a href="#_">THE GAME</a></li>
+                    <li data-pos="preorder"><a href="#_">PRE-ORDER</a></li>
                 </ul>
-                <a href="#_"><span class="pre-order_btn"></span></a>
+                <a href="#_" ><span id="preorder" class="pre-order_btn"></span></a>
             </div>
         </nav>
 	</header>
@@ -132,7 +132,7 @@ if (isset($_COOKIE["age"]))
     <!--end instructional section-->
 
     <!--flash component section-->
-    <section class="content flash_wrapper">
+    <section class="content flash_wrapper" id="flash_wrapper" >
         <div class="large-12 columns">
 
             <div class="btb_game">
@@ -144,7 +144,7 @@ if (isset($_COOKIE["age"]))
     <!--end flash component section-->
 
     <!--weapons section-->
-    <section class="content weapons" data-type="background" data-speed="2">
+    <section class="content weapons" data-type="background" data-speed="2" id="weapons">
      <div class="row">
         <div class="large-12 columns">
             <h2 class="black">GADGETS</h2>
@@ -210,7 +210,7 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
     <!--end weapons section-->
 
     <!--screenshot section-->
-    <section class="content screenshots" data-type="background" data-speed="2">
+    <section class="content screenshots" data-type="background" data-speed="2" id="screenshots">
     	<div class="row">
         <div class="large-12 columns">
         	<h2>SCREENSHOTS</h2>
@@ -233,7 +233,7 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
     <!--end screenshot section-->
 
     <!--about section-->
-    <section class="content the_game">
+    <section class="content the_game" id="the_game">
     	<div class="row">
         	<div class="large-12 columns">
             	<div class="about_container">
@@ -300,51 +300,26 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   
-  <script src="javascripts/foundation/foundation.js"></script>
+	<script src="javascripts/waypoints.min.js"></script>
 	
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	<script src="javascripts/waypoints-sticky.min.js"></script>
 	
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-	
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-	
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/foundation.interchange.js"></script>
-	
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-	
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/foundation.section.js"></script>
-	
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-
-	<script src="javascripts/vendor/jquery.knob.js"></script>
-
-    <script src="javascripts/vendor/transit.js"></script>	
+	<script src="javascripts/scrollTo.js"></script>
 
     <script type="text/javascript" src="javascripts/vendor/jquery.nivo.slider.js"></script>
 	
   
-  <script>
+  <!--script>
     $(document).foundation();
-  </script>
+  </script-->
 
   <script>
-
+	
+	
   	//code for switch backgrounds on nav items
   	$(document).ready(function(){
+		
+		$('.fixedNav').waypoint('sticky');
 
   		$('nav').on('click', 'li', function(){
   			
@@ -409,10 +384,39 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
   <script>
 
-  	//get file name
-  //move: file 1 - top right, file two - right, file 
+
 
   $(document).ready(function(){
+	  
+	  $('#nav').find('li').on('click', function(){
+
+	    var x = $(this).attr('data-pos');
+
+	    if(x == 'the_game') {
+		  $.scrollTo( '#flash_wrapper', 800, {easing:'swing'});
+	    } else if (x == 'weapons') {
+	      $.scrollTo( '#weapons', 800, {easing:'swing'});
+	    } else if (x == 'screenshots') {
+	      $.scrollTo( '#screenshots', 800, {easing:'swing'});
+	    } else if (x == 'preorder'){
+	      $.scrollTo( '#the_game', 800, {easing:'swing'});
+	    }
+
+	    console.log('scrolling to >>> ' + x);
+
+	  });
+
+	  $('.top_btn').find('a').on('click', function(){
+
+	    $.scrollTo( '#ignHeader', 800, {easing:'swing'});
+
+	  });
+	  
+	  $('#preorder').on('click', function(){
+
+	    $.scrollTo( '#the_game', 800, {easing:'swing'});
+
+	  });
 
   	function spin(cName){
 
@@ -431,11 +435,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	          elem.style.top = y + 'px';
 	          //need to work this part out
 	          var rot = 90 + (i * (360 / elems.length));
-	          // elem.style['-moz-transform'] = "rotate("+rot+"deg)";
-	          // elem.style.MozTransform = "rotate("+rot+"deg)";
-	          // elem.style['-webkit-transform'] = "rotate("+rot+"deg)";
-	          // elem.style['-o-transform'] = "rotate("+rot+"deg)";
-	          // elem.style['-ms-transform'] = "rotate("+rot+"deg)";
+
 	          angle += increase;
 	          console.log(angle);
 	      }
@@ -548,10 +548,12 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 	  	console.log(gadget);
 
-	    $('.file_cont').animate({ opacity: 0});
+	    $('.file_cont').animate({ opacity: 0}, function(){
+	    	$(this).hide();
+	    });
 	    parDiv.find('.big_folder').children().attr('src', gadget).end().show().delay(300).animate({ opacity: 1 });
-	    parDiv.find('.libya').children().text(gadgName).end().delay(300).animate({ opacity: 1, top: 100 });
-	    parDiv.find('.web').delay(300).animate({ opacity: 1}, 200);
+	    parDiv.find('.libya').children().text(gadgName).end().show().delay(300).animate({ opacity: 1, top: 100 });
+	    parDiv.find('.web').show().delay(300).animate({ opacity: 1}, 200);
 		
 		parDiv.find("[data-name='" + gadgName + "']").removeClass('hidden').animate({ opacity: 1, bottom: 0});
 		
@@ -580,12 +582,12 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 	  parDiv.on('click', '.big_folder', function(){
 		   
-	    parDiv.find('.big_folder').animate({ opacity: 0});
+	    parDiv.find('.big_folder').animate({ opacity: 0}, function(){ $(this).hide(); });
 	    $('.file_cont').show().delay(300).animate({ opacity: 1 }, 1000);
-	    parDiv.find('.libya').animate({ opacity: 0, top: 60 });
-	    parDiv.find('.web').delay(300).animate({ opacity: 0}, 50);
+	    parDiv.find('.libya').animate({ opacity: 0, top: 60 }, function(){ $(this).hide(); });
+	    parDiv.find('.web').delay(300).animate({ opacity: 0}, 50, function(){ $(this).hide(); });
 		
-		parDiv.find('.gadget_info').animate({ opacity: 0, bottom: 50}, function(){
+		parDiv.find('.gadget_info').delay(200).animate({ opacity: 0, bottom: 50}, function(){
 			$(this).addClass('hidden');
 		});
 		

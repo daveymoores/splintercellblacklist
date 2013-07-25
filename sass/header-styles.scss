@@ -110,6 +110,7 @@ header {
 nav {
   height: 70px;
   background-color: black;
+  width: 100%;
   
   .row {
     padding: 0px 2%;
@@ -179,5 +180,11 @@ nav {
     top: -22px;
 }
 
-
 /**end pre-order button**/
+
+/**fixed nav**/
+.stuck {
+	position: fixed;
+	margin-top: -40px!important;
+	z-index: 99999;
+}

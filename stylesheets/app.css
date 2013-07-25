@@ -7331,20 +7331,21 @@ header {
 nav {
   height: 70px;
   background-color: black;
+  width: 100%;
 }
-/* line 114, ../sass/header-styles.scss */
+/* line 115, ../sass/header-styles.scss */
 nav .row {
   padding: 0px 2%;
   background: black url(../assets/images/nav_bg.jpg) no-repeat top center;
   position: relative;
 }
-/* line 120, ../sass/header-styles.scss */
+/* line 121, ../sass/header-styles.scss */
 nav ul {
   list-style: none;
   padding: 0px 20px;
   margin: 0px;
 }
-/* line 125, ../sass/header-styles.scss */
+/* line 126, ../sass/header-styles.scss */
 nav ul li {
   display: block;
   float: left;
@@ -7354,25 +7355,25 @@ nav ul li {
   text-align: center;
   font-size: 14px;
 }
-/* line 134, ../sass/header-styles.scss */
+/* line 135, ../sass/header-styles.scss */
 nav ul li.active {
   background: black url(../assets/images/nav_bg-blue.png) repeat-x top left;
 }
-/* line 137, ../sass/header-styles.scss */
+/* line 138, ../sass/header-styles.scss */
 nav ul li.active a {
   color: #08252a;
   font-family: 'quantico_reg', Helvetica, Sans-serif;
 }
-/* line 141, ../sass/header-styles.scss */
+/* line 142, ../sass/header-styles.scss */
 nav ul li.active a:hover {
   color: black;
 }
-/* line 147, ../sass/header-styles.scss */
+/* line 148, ../sass/header-styles.scss */
 nav ul li.logo {
   width: 40%;
   padding-top: 5px;
 }
-/* line 152, ../sass/header-styles.scss */
+/* line 153, ../sass/header-styles.scss */
 nav ul li a {
   color: #ffffff;
   font-family: 'quantico_reg', Helvetica, Sans-serif;
@@ -7381,14 +7382,14 @@ nav ul li a {
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
-/* line 161, ../sass/header-styles.scss */
+/* line 162, ../sass/header-styles.scss */
 nav ul li a:hover {
   color: #cccccc;
 }
 
 /**end Blacklist Menu**/
 /**pre-order button**/
-/* line 173, ../sass/header-styles.scss */
+/* line 174, ../sass/header-styles.scss */
 .pre-order_btn {
   background: transparent url(../assets/images/game_pre-order.png) top center no-repeat;
   height: 160px;
@@ -7399,6 +7400,14 @@ nav ul li a:hover {
 }
 
 /**end pre-order button**/
+/**fixed nav**/
+/* line 186, ../sass/header-styles.scss */
+.stuck {
+  position: fixed;
+  margin-top: -40px !important;
+  z-index: 99999;
+}
+
 /**main body styles**/
 /* line 3, ../sass/main.scss */
 body {
@@ -7823,7 +7832,7 @@ section.content.instructional img.sam {
 /* line 389, ../sass/main.scss */
 .file_cont {
   position: absolute;
-  z-index: 999;
+  z-index: 99;
   margin-top: -110px;
 }
 
@@ -7846,7 +7855,7 @@ section.content.instructional img.sam {
   position: absolute;
   right: 75px;
   top: 120px;
-  z-index: 100;
+  z-index: 10;
   opacity: 0;
 }
 
@@ -8070,7 +8079,7 @@ p.corp-terms {
 
 /* line 110, ../sass/footer-styles.scss */
 p.corp-terms a {
-  color: #c6a129;
+  color: #77C9BC;
 }
 
 /* line 114, ../sass/footer-styles.scss */
@@ -8089,7 +8098,7 @@ p.corp-links {
 
 /* line 127, ../sass/footer-styles.scss */
 p.corp-links a {
-  color: #c6a129;
+  color: #77C9BC;
 }
 
 /* line 131, ../sass/footer-styles.scss */
