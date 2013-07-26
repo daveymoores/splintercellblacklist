@@ -83,7 +83,7 @@ if (isset($_COOKIE["age"]))
 <article>
     <header>
 		<div id="ignHeader" class="clear">
-			<ul class="social-btns">
+			<!-- <ul class="social-btns">
 	                <li>
 	                    <div class="fb-like" data-href="NEWURLPLEASE" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
 	                </li>
@@ -93,7 +93,7 @@ if (isset($_COOKIE["age"]))
 	                <li>
 	                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="NEWURLPLEASE"></div>
 	                </li>
-	            </ul>
+	            </ul> -->
 				
 				<div id="ignHeader-userBar">
 					<div class="container"> <a id="ignHeader-logo" href="http://uk.ign.com/"></a>

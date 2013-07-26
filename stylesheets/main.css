@@ -568,7 +568,7 @@ section.the_game .about_container .pre-order_section img.sc_button {
 /**age gate styles**/
 /* line 539, ../sass/main.scss */
 html, .age_gate {
-  height: 100%;
+  height: 120%;
 }
 /* line 542, ../sass/main.scss */
 html img.btb_logo, .age_gate img.btb_logo {
@@ -580,13 +580,17 @@ html img.btb_logo, .age_gate img.btb_logo {
   width: 400px;
 }
 /* line 551, ../sass/main.scss */
-html #sc_form-container, .age_gate #sc_form-container {
-  height: 700px;
+html footer, .age_gate footer {
+  margin-top: -30px;
 }
 /* line 555, ../sass/main.scss */
+html #sc_form-container, .age_gate #sc_form-container {
+  height: 800px;
+}
+/* line 559, ../sass/main.scss */
 html #sc_form-container form, .age_gate #sc_form-container form {
   width: 35%;
-  margin-top: 35%;
+  top: 350px;
   position: absolute;
   left: 50%;
   margin-left: -17.5%;
@@ -596,20 +600,20 @@ html #sc_form-container form, .age_gate #sc_form-container form {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 566, ../sass/main.scss */
+/* line 570, ../sass/main.scss */
 html #sc_form-container form.shadow, .age_gate #sc_form-container form.shadow {
   -moz-box-shadow: 0 0 5px #4FA199;
   -webkit-box-shadow: 0 0 5px #4FA199;
   box-shadow: 0 0 5px #4FA199;
 }
-/* line 572, ../sass/main.scss */
+/* line 576, ../sass/main.scss */
 html #sc_form-container form h3, .age_gate #sc_form-container form h3 {
   text-align: center;
   font-size: 18px;
   font-family: 'quantico_bold', helvetica, sans-serif;
   color: white;
 }
-/* line 579, ../sass/main.scss */
+/* line 583, ../sass/main.scss */
 html #sc_form-container form input[type=submit], html #sc_form-container form input[type=text], .age_gate #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=text] {
   text-align: center;
   display: block;
@@ -619,7 +623,7 @@ html #sc_form-container form input[type=submit], html #sc_form-container form in
   border-radius: 2px;
   font-family: 'quantico_reg', helvetica, sans-serif;
 }
-/* line 589, ../sass/main.scss */
+/* line 593, ../sass/main.scss */
 html #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=submit] {
   margin: 30px auto;
   text-transform: uppercase;
@@ -633,7 +637,7 @@ html #sc_form-container form input[type=submit], .age_gate #sc_form-container fo
   border-radius: 2px;
   padding: 5px 16px;
 }
-/* line 603, ../sass/main.scss */
+/* line 607, ../sass/main.scss */
 html #sc_form-container form label, .age_gate #sc_form-container form label {
   color: white;
   font-family: 'quantico_bold', helvetica, sans-serif;
@@ -644,13 +648,13 @@ html #sc_form-container form label, .age_gate #sc_form-container form label {
 
 /**end pre-order section**/
 @media only screen and (max-width: 1050px) {
-  /* line 619, ../sass/main.scss */
+  /* line 623, ../sass/main.scss */
   article {
     width: 1050px;
   }
 }
 @media only screen and (max-width: 1580px) {
-  /* line 625, ../sass/main.scss */
+  /* line 629, ../sass/main.scss */
   article {
     width: 100%;
   }
