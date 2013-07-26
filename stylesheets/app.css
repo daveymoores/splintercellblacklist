@@ -7840,7 +7840,7 @@ section.content.instructional img.sam {
 .libya {
   position: absolute;
   right: 75px;
-  top: 230px;
+  top: 60px;
   z-index: 100;
   opacity: 0;
   font-size: 100px;
@@ -7848,9 +7848,10 @@ section.content.instructional img.sam {
   float: right;
   color: black;
   font-family: 'din', Helvetica, sans-serif;
+  width: 78%;
 }
 
-/* line 408, ../sass/main.scss */
+/* line 409, ../sass/main.scss */
 .web {
   position: absolute;
   right: 75px;
@@ -7859,20 +7860,49 @@ section.content.instructional img.sam {
   opacity: 0;
 }
 
-/* line 416, ../sass/main.scss */
+/* line 417, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 420, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
+#close {
+  opacity: 0;
+  margin-left: 25px;
+  margin-top: 30px;
+  position: absolute;
+  font-family: 'din', helvetica, sans-serif;
+  color: black;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  width: 150px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+/* line 438, ../sass/main.scss */
+#close span {
+  height: 26px;
+  width: 26px;
+  display: inline;
+  background-image: url(../assets/images/close-icon.png);
+  float: left;
+}
+/* line 446, ../sass/main.scss */
+#close:hover {
+  color: #999999;
+}
+
+/* line 451, ../sass/main.scss */
 .gadget_info {
   padding: 25px;
   margin-right: 40%;
-  bottom: 0px;
+  bottom: 50px;
   position: absolute;
   opacity: 0;
 }
-/* line 427, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 .gadget_info h4 {
   font-family: 'din', Helvetica, sans-serif;
   width: 100%;
@@ -7881,7 +7911,7 @@ section.content.instructional img.sam {
   font-size: 18px;
   border-bottom: none;
 }
-/* line 436, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .gadget_info p {
   font-size: 14px;
   line-height: 1.4;
@@ -7889,25 +7919,25 @@ section.content.instructional img.sam {
 
 /**end gadget styles**/
 /**pre-order section**/
-/* line 448, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 section.the_game .about_container {
   background: url(../assets/images/about_bg.jpg);
   margin: 0px 10px;
   padding: 15px;
 }
-/* line 453, ../sass/main.scss */
+/* line 484, ../sass/main.scss */
 section.the_game .about_container h2 {
   background: transparent url(../assets/images/opaque_grn.png) repeat;
   margin: 0px;
 }
-/* line 458, ../sass/main.scss */
+/* line 489, ../sass/main.scss */
 section.the_game .about_container .empty_block {
   border: 1px solid #66cccc;
   width: 100%;
   height: 4px;
   display: block;
 }
-/* line 465, ../sass/main.scss */
+/* line 496, ../sass/main.scss */
 section.the_game .about_container .full_block {
   width: 30%;
   background-color: #66cccc;
@@ -7916,18 +7946,18 @@ section.the_game .about_container .full_block {
   float: right;
   margin-bottom: 15px;
 }
-/* line 474, ../sass/main.scss */
+/* line 505, ../sass/main.scss */
 section.the_game .about_container p {
   color: white;
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 15px;
 }
-/* line 482, ../sass/main.scss */
+/* line 513, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img {
   margin: 70px auto 0px;
 }
-/* line 487, ../sass/main.scss */
+/* line 518, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.logo {
   position: absolute;
   left: 50%;
@@ -7935,22 +7965,22 @@ section.the_game .about_container .pre-order_section img.logo {
   margin-left: -175px;
   margin-top: 0px;
 }
-/* line 495, ../sass/main.scss */
+/* line 526, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.game_packs {
   position: absolute;
   right: 23px;
 }
-/* line 500, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.sc_button {
   margin-left: 65px;
 }
 
 /**age gate styles**/
-/* line 508, ../sass/main.scss */
+/* line 539, ../sass/main.scss */
 html, .age_gate {
   height: 100%;
 }
-/* line 511, ../sass/main.scss */
+/* line 542, ../sass/main.scss */
 html img.btb_logo, .age_gate img.btb_logo {
   position: absolute;
   left: 50%;
@@ -7959,11 +7989,11 @@ html img.btb_logo, .age_gate img.btb_logo {
   margin-top: 140px;
   width: 400px;
 }
-/* line 520, ../sass/main.scss */
+/* line 551, ../sass/main.scss */
 html #sc_form-container, .age_gate #sc_form-container {
   height: 700px;
 }
-/* line 524, ../sass/main.scss */
+/* line 555, ../sass/main.scss */
 html #sc_form-container form, .age_gate #sc_form-container form {
   width: 35%;
   margin-top: 35%;
@@ -7976,20 +8006,20 @@ html #sc_form-container form, .age_gate #sc_form-container form {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 535, ../sass/main.scss */
+/* line 566, ../sass/main.scss */
 html #sc_form-container form.shadow, .age_gate #sc_form-container form.shadow {
   -moz-box-shadow: 0 0 5px #4FA199;
   -webkit-box-shadow: 0 0 5px #4FA199;
   box-shadow: 0 0 5px #4FA199;
 }
-/* line 541, ../sass/main.scss */
+/* line 572, ../sass/main.scss */
 html #sc_form-container form h3, .age_gate #sc_form-container form h3 {
   text-align: center;
   font-size: 18px;
   font-family: 'quantico_bold', helvetica, sans-serif;
   color: white;
 }
-/* line 548, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 html #sc_form-container form input[type=submit], html #sc_form-container form input[type=text], .age_gate #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=text] {
   text-align: center;
   display: block;
@@ -7999,7 +8029,7 @@ html #sc_form-container form input[type=submit], html #sc_form-container form in
   border-radius: 2px;
   font-family: 'quantico_reg', helvetica, sans-serif;
 }
-/* line 558, ../sass/main.scss */
+/* line 589, ../sass/main.scss */
 html #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=submit] {
   margin: 30px auto;
   text-transform: uppercase;
@@ -8013,7 +8043,7 @@ html #sc_form-container form input[type=submit], .age_gate #sc_form-container fo
   border-radius: 2px;
   padding: 5px 16px;
 }
-/* line 572, ../sass/main.scss */
+/* line 603, ../sass/main.scss */
 html #sc_form-container form label, .age_gate #sc_form-container form label {
   color: white;
   font-family: 'quantico_bold', helvetica, sans-serif;
@@ -8024,13 +8054,13 @@ html #sc_form-container form label, .age_gate #sc_form-container form label {
 
 /**end pre-order section**/
 @media only screen and (max-width: 1050px) {
-  /* line 588, ../sass/main.scss */
+  /* line 619, ../sass/main.scss */
   article {
     width: 1050px;
   }
 }
 @media only screen and (max-width: 1580px) {
-  /* line 594, ../sass/main.scss */
+  /* line 625, ../sass/main.scss */
   article {
     width: 100%;
   }

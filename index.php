@@ -136,7 +136,7 @@ if (isset($_COOKIE["age"]))
         <div class="large-12 columns">
 
             <div class="btb_game">
-                <div class="btb_holder"><!-- <object width="950" height="650" data="http://btb.ubisoft.uk.com/"></object> --></div>
+                <div class="btb_holder"><object width="950" height="650" data="http://btb.ubisoft.uk.com/"></object></div>
             </div>
 
         </div>
@@ -171,6 +171,8 @@ if (isset($_COOKIE["age"]))
 				<div class="web"><img src="assets/images/web.png"></div>
 				<div class="libya"><span>EMP</span></div>
 				<div class="big_folder"><img src="" alt="" ></div>
+				
+				<a id="close"><span></span> CLOSE</a>
 
 				<div data-name="EMP" class="gadget_info hidden">
 					<h4>RECON &amp; DISTRACTION</h4>
@@ -388,6 +390,8 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
   $(document).ready(function(){
 	  
+	  
+	  
 	  $('#nav').find('li').on('click', function(){
 
 	    var x = $(this).attr('data-pos');
@@ -450,47 +454,6 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	 $('.file').mouseover(function(){
 
 	    var fileNum = $(this).attr('class').charAt(12);
-	    // var topMov,
-	    //     leftMov;
-
-	    // switch(fileNum)
-	    // {
-	    // case '1':
-	    //   topMov = '+=0px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // case '2':
-	    //   topMov = '+=5px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // case '3':
-	    //   topMov = '+=5px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // case '4':
-	    //   topMov = '-=0px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // case '5':
-	    //   topMov = '-=5px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // case '6':
-	    //   topMov = '-=5px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // }
-
-	    // console.log(topMov);
-	    // console.log(leftMov);
-	    // console.log(fileNum);
-
-	      // $(this).stop().animate({
-
-	      //   left: leftMov,
-	      //   top: topMov
-
-	      // }, 200, 'linear');
 
 
 	  });
@@ -498,48 +461,12 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    $('.file').mouseout(function(){
 
 	        var fileNum = $(this).attr('class').charAt(12);
-	    // var topMov,
-	    //     leftMov;
-
-	    // switch(fileNum)
-	    // {
-	    // case '1':
-	    //   topMov = '-=0px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // case '2':
-	    //   topMov = '-=5px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // case '3':
-	    //   topMov = '-=5px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // case '4':
-	    //   topMov = '+=0px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // case '5':
-	    //   topMov = '+=5px';
-	    //   leftMov = '+=5px';
-	    //   break;
-	    // case '6':
-	    //   topMov = '+=5px';
-	    //   leftMov = '-=5px';
-	    //   break;
-	    // }
-
-	    //   $(this).stop().animate({
-
-	    //     left: leftMov,
-	    //     top: topMov
-
-	    //   }, 300, 'linear');
-
 
 	  });
 	  
 	  var parDiv = $('#final_gadg-cont');
+	  
+	  $('#close').hide();
 
 	  $('.file').on('click', 'img', function(){
 
@@ -554,10 +481,13 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    parDiv.find('.big_folder').children().attr('src', gadget).end().show().delay(300).animate({ opacity: 1 });
 	    parDiv.find('.libya').children().text(gadgName).end().show().delay(300).animate({ opacity: 1, top: 100 });
 	    parDiv.find('.web').show().delay(300).animate({ opacity: 1}, 200);
+		$('#close').show().animate({opacity: 1}, 200); 
 		
 		parDiv.find("[data-name='" + gadgName + "']").removeClass('hidden').animate({ opacity: 1, bottom: 0});
 		
 	  });
+	  
+	  
 	  
 	  function findLabel(elem){
 		  var folderName = elem.attr('class');
@@ -580,12 +510,15 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 	  });
 
-	  parDiv.on('click', '.big_folder', function(){
+	  parDiv.on('click', '#close', function(){
 		   
 	    parDiv.find('.big_folder').animate({ opacity: 0}, function(){ $(this).hide(); });
 	    $('.file_cont').show().delay(300).animate({ opacity: 1 }, 1000);
 	    parDiv.find('.libya').animate({ opacity: 0, top: 60 }, function(){ $(this).hide(); });
 	    parDiv.find('.web').delay(300).animate({ opacity: 0}, 50, function(){ $(this).hide(); });
+		$('#close').animate({opacity: 0}, 200, function(){
+			$(this).hide();
+		});
 		
 		parDiv.find('.gadget_info').delay(200).animate({ opacity: 0, bottom: 50}, function(){
 			$(this).addClass('hidden');

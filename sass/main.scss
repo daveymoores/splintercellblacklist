@@ -395,14 +395,15 @@ section.content {
 .libya {
 	position: absolute;
 	right: 75px;
-	top: 230px;
+	top: 60px;
 	z-index: 100;
 	opacity: 0;
 	font-size: 100px;
 	text-align: right;
 	float: right;
 	color: black;
-	font-family: 'din', Helvetica, sans-serif; 
+	font-family: 'din', Helvetica, sans-serif;
+	width: 78%; 
 }
 
 .web {
@@ -417,10 +418,40 @@ section.content {
 	display: none;
 }
 
+#close {
+	opacity: 0;
+	margin-left: 25px;
+	margin-top: 30px;
+	position: absolute;
+	font-family: 'din', helvetica, sans-serif;
+	color: black;
+	
+    -webkit-transition:color 0.3s ease-in;  
+    -moz-transition:color 0.3s ease-in;  
+    -o-transition:color 0.3s ease-in;  
+    transition:color 0.3s ease-in;
+	
+	width: 150px;
+	line-height: 30px;
+	text-indent:10px;
+	
+	span {
+		height: 26px;
+		width: 26px;
+		display: inline;
+		background-image: url(../assets/images/close-icon.png);
+		float: left;
+	}
+	
+	&:hover {
+		color: #999999;
+	}
+}
+
 .gadget_info {
 	padding: 25px;
 	margin-right: 40%;
-	bottom: 0px;
+	bottom: 50px;
 	position: absolute;
 	opacity: 0;
 	
