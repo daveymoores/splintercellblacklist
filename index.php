@@ -106,7 +106,7 @@ if (isset($_COOKIE["age"]))
             <div class="row">
                 <ul class="large-12 columns">
                     <li data-pos="the_game"><a href="#_">THE GAME</a></li>
-                    <li data-pos="weapons"><a href="#_">WEAPONS</a></li>
+                    <li data-pos="weapons"><a href="#_">GADGETS</a></li>
                     <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
                     <li data-pos="screenshots"><a href="#_">SCREENSHOTS</a></li>
                     <li data-pos="preorder"><a href="#_">PRE-ORDER</a></li>
