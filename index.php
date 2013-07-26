@@ -107,7 +107,7 @@ if (isset($_COOKIE["age"]))
                 <ul class="large-12 columns">
                     <li data-pos="the_game"><a href="#_">THE GAME</a></li>
                     <li data-pos="weapons"><a href="#_">GADGETS</a></li>
-                    <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
+                    <li class="logo"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></li>
                     <li data-pos="screenshots"><a href="#_">SCREENSHOTS</a></li>
                     <li data-pos="preorder"><a href="#_">PRE-ORDER</a></li>
                 </ul>
@@ -124,7 +124,7 @@ if (isset($_COOKIE["age"]))
 				<img class="sam" src="assets/images/sam.png" alt="Sam Fisher">
 				<div class="holder_instructional">
 					<h3 class="tango">ARE YOU SMART ENOUGH TO JOIN THE ELITE RANKS OF THE <br>FOURTH ECHELON?</h3>
-					<p>Prove your mental acuity by solving one of our four intel puzzles over the next month and you’ll <br>be entered into our grand prize draw to win a weekly spot prize <br>or even a [TOP PRIZE].</p>
+					<p>Prove your mental acuity by solving one of our four intel puzzles over the next month, and you’ll be entered into our grand prize draw for the chance to win weekly spot prizes or our top prize of a <b>gaming PC powered by Nvidia GeForce GTX 780.</b></p>
 				</div>
 			</div>
 		</div>
@@ -240,7 +240,7 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
         	<div class="large-12 columns">
             	<div class="about_container">
             		
-            		<h2>ABOUT THE GAME</h2>
+            		<h2>ABOUT THE GAME <span></span></h2>
             		<span class="empty_block"><span class="full_block"></span></span>
 
             		<p>The United States has a military presence in two thirds of the countries around the world. A group of 12 have had enough and initiate a terror ultimatum called the Blacklist – a deadly countdown of escalating terrorist attacks on US interests. Sam Fisher is the leader of the newly formed Fourth Echelon unit: a clandestine unit that answers solely to the President of the United States. Sam and his team must hunt down these terrorists by any means necessary, and stop the Blacklist countdown before it reaches zero.</p>
@@ -250,9 +250,9 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
             		<div class="pre-order_section">
             			<img class="logo" src="assets/images/sc_logo-pre-order.png" alt="">
             			<div class="clearfix"></div>
-            			<img src="assets/images/special_packshots.png" alt="">
-            			<img class="sc_button" src="assets/images/pre_order-game.png" alt="">
-            			<img class="game_packs" src="assets/images/game_packshots.png" alt="">
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img src="assets/images/special_packshots.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img class="sc_button" src="assets/images/pre_order-game.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img class="game_packs" src="assets/images/game_packshots.png" alt=""></a>
             		</div>
             	</div>
         	</div>
@@ -397,7 +397,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    var x = $(this).attr('data-pos');
 
 	    if(x == 'the_game') {
-		  $.scrollTo( '#flash_wrapper', 800, {easing:'swing'});
+		  $.scrollTo( '#flash_wrapper', 800, {easing:'swing', offsetTop: '10px'});
 	    } else if (x == 'weapons') {
 	      $.scrollTo( '#weapons', 800, {easing:'swing'});
 	    } else if (x == 'screenshots') {

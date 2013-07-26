@@ -67,8 +67,8 @@ section.content {
 			position: relative;
 
 			.btb_holder {
-				height: 649px;
-				width: 948px;
+				height: 650px;
+				width: 950px;
 				background-color: black;
 				-webkit-border-radius: 7px;
 				-moz-border-radius: 7px;
@@ -77,11 +77,19 @@ section.content {
 				margin: 19px auto;
 				position: absolute;
 				left: 50%;
-				margin-left: -473px;
+				margin-left: -475px;
 				overflow: hidden;
 				scroll: none;
 			}
 		}
+	}
+	
+	object {
+		overflow: hidden;
+		position: relative;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
 	}
 
 	&.instructional {
@@ -100,6 +108,7 @@ section.content {
 					color: white;
 					font-weight: normal;
 					font-size: 13px;
+					width: 61%;
 				}
 		}
 
@@ -325,7 +334,7 @@ section.content {
 	height: AUTO;
 	width: 180px;
 	display: block;
-	margin-left: 300px;
+	margin-left: 270px;
 	margin-top: 200px;
 
 	&:hover {
@@ -335,7 +344,7 @@ section.content {
 
 .name {
 
-	margin-left: 270px;
+	margin-left: 240px;
 	margin-top: 180px;
 
 	a {
@@ -404,6 +413,7 @@ section.content {
 	color: black;
 	font-family: 'din', Helvetica, sans-serif;
 	width: 78%; 
+	display: none;
 }
 
 .web {
@@ -484,6 +494,15 @@ section.the_game {
 		h2 {
 			background: transparent url(../assets/images/opaque_grn.png) repeat;
 			margin: 0px;
+			padding: 10px 0px 0px 10px;
+			font-size: 24px;
+			
+			span {
+				float: right;
+				height: 23px;
+				width: 205px;
+				background: transparent url(../assets/images/stripes.png) no-repeat;
+			}
 		}
 
 		.empty_block {
@@ -491,6 +510,7 @@ section.the_game {
 		 	width: 100%;
 		 	height: 4px;
 		 	display: block;
+			margin-bottom: 15px;
 		} 
 
 		.full_block {
