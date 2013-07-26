@@ -48,7 +48,13 @@ $html = <<< OET
 
 </head>
 <body class="age_gate">
-
+	
+	<section id="hex"></section>
+	<section id="hex_2"></section>
+	<section id="hex_3"></section>
+	
+	
+<article>	
 	<header id="ignHeaderHeader">
 		<div id="ignHeader" class="clear">
 
@@ -59,12 +65,24 @@ $html = <<< OET
 				</div>
 
 		</div>
+        <nav id="nav" class="fixedNav">
+            <div class="row">
+                <ul class="large-12 columns">
+                    <li data-pos="the_game"></li>
+                    <li data-pos="weapons"></li>
+                    <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
+                    <li data-pos="screenshots"></li>
+                    <li data-pos="preorder"></li>
+                </ul>
+            </div>
+        </nav>
 	</header>
 
-
-    <div class="row">
+	<img src="assets/images/stb_logo.png" alt="Beat The Blacklist Logo" class="btb_logo">
+	
+    <div id="sc_form-container" class="row">
         <div class="large-12 columns">
-            <form action="#" method="post" onsubmit="return validateForm();" name="age_check" onkeypress="return numbersOnly(event);">
+            <form class="shadow" action="#" method="post" onsubmit="return validateForm();" name="age_check" onkeypress="return numbersOnly(event);">
             <h3>ENTER YOUR DATE OF BIRTH</h3>
               
                 <div class="input_wrapper">
@@ -83,11 +101,46 @@ $html = <<< OET
                         </div>
                     </div>
                 </div>
-                <input type="submit" name="submit" value="Verify Age" class="small button" />
+                <input type="submit" name="submit" value="Verify Age" class="" />
                 
               </form>
         </div>
     </div>
+
+    <!--site footer-->
+
+    <footer>
+        <div class="top_btn"><a href="#_">TOP</a></div>
+        <div class="row">
+            <div class="large-12 columns">
+                <img class="logos" src="assets/images/logos.jpg" alt="All logos" />
+
+                <p class="small_text">© 2002–2013 Ubisoft Entertainment. All Rights Reserved. Tom Clancy’s, Splinter Cell, Blacklist, Sam Fisher, the Soldier Icon, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. 
+KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Microsoft group of companies and are used under license from Microsoft. “PlayStation” and “PS3” are trademarks or registered trademarks of Sony Computer Entertainment Inc. WiiU is a trademark of Nintendo. © 2012 Nintendo. </p>
+                
+            </div>
+        </div>
+    </footer>
+    <!--end site footer-->
+
+    
+    <!-- start footer -->    
+    <div id="ign_footer">
+        <div class="ign-elements">
+            <div class="row">
+                <section class="large-6 columns">
+                    <p class="corp-terms">Copyright 2013 <span class="white">IGN Entertainment UK, Inc.</span><br>
+                     <a href="http://corp.ign.com/privacy.html" title="Privacy Policy">Privacy Policy</a> | <a href="http://corp.ign.com/user-agreement.html" title="User Agreement">User Agreement</a></p>
+                </section>
+                <section class="large-6 columns right">
+                    <p class="corp-links"><a href="http://uk.corp.ign.com/#about" title="About Us">About Us</a> | <a href="http://uk.corp.ign.com/#contact" title="Contact Us">Contact Us</a> | <a href="http://corp.ign.com/feeds.html" title="RSS Feeds">RSS Feeds</a></p>
+                </section>
+              </div>
+        </div>
+    </div>
+    <!--end footer-->
+</article>
+
 
 OET;
 

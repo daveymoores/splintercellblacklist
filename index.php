@@ -136,7 +136,7 @@ if (isset($_COOKIE["age"]))
         <div class="large-12 columns">
 
             <div class="btb_game">
-                <div class="btb_holder"><object width="950" height="650" data="http://btb.ubisoft.uk.com/"></object></div>
+                <div class="btb_holder"><!-- <object width="950" height="650" data="http://btb.ubisoft.uk.com/"></object> --></div>
             </div>
 
         </div>

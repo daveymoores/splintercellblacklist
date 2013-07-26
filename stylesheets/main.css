@@ -535,15 +535,92 @@ section.the_game .about_container .pre-order_section img.sc_button {
   margin-left: 65px;
 }
 
+/**age gate styles**/
+/* line 508, ../sass/main.scss */
+html, .age_gate {
+  height: 100%;
+}
+/* line 511, ../sass/main.scss */
+html img.btb_logo, .age_gate img.btb_logo {
+  position: absolute;
+  left: 50%;
+  display: block;
+  margin-left: -200px;
+  margin-top: 140px;
+  width: 400px;
+}
+/* line 520, ../sass/main.scss */
+html #sc_form-container, .age_gate #sc_form-container {
+  height: 700px;
+}
+/* line 524, ../sass/main.scss */
+html #sc_form-container form, .age_gate #sc_form-container form {
+  width: 35%;
+  margin-top: 35%;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.5%;
+  padding: 2%;
+  background: black url(../assets/images/about_bg.jpg) top center no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 535, ../sass/main.scss */
+html #sc_form-container form.shadow, .age_gate #sc_form-container form.shadow {
+  -moz-box-shadow: 0 0 5px #4FA199;
+  -webkit-box-shadow: 0 0 5px #4FA199;
+  box-shadow: 0 0 5px #4FA199;
+}
+/* line 541, ../sass/main.scss */
+html #sc_form-container form h3, .age_gate #sc_form-container form h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'quantico_bold', helvetica, sans-serif;
+  color: white;
+}
+/* line 548, ../sass/main.scss */
+html #sc_form-container form input[type=submit], html #sc_form-container form input[type=text], .age_gate #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=text] {
+  text-align: center;
+  display: block;
+  margin: auto;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'quantico_reg', helvetica, sans-serif;
+}
+/* line 558, ../sass/main.scss */
+html #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=submit] {
+  margin: 30px auto;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  font-family: 'quantico_bold', helvetica, sans-serif;
+  color: black;
+  background: black url(../assets/images/nav_bg-blue.png) repeat-x top left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 16px;
+}
+/* line 572, ../sass/main.scss */
+html #sc_form-container form label, .age_gate #sc_form-container form label {
+  color: white;
+  font-family: 'quantico_bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+
 /**end pre-order section**/
 @media only screen and (max-width: 1050px) {
-  /* line 510, ../sass/main.scss */
+  /* line 588, ../sass/main.scss */
   article {
     width: 1050px;
   }
 }
 @media only screen and (max-width: 1580px) {
-  /* line 516, ../sass/main.scss */
+  /* line 594, ../sass/main.scss */
   article {
     width: 100%;
   }

@@ -504,6 +504,84 @@ section.the_game {
 	}
 }
 
+/**age gate styles**/
+html, .age_gate {
+	height: 100%;
+	
+	img.btb_logo {
+		position: absolute;
+		left: 50%;
+		display: block;
+		margin-left: -200px;
+		margin-top: 140px;
+		width: 400px;
+	}
+	
+	#sc_form-container {
+		
+		height: 700px;
+		
+		form {
+			width: 35%;
+			margin-top: 35%;
+			position: absolute;
+			left: 50%;
+			margin-left: -17.5%;
+			padding: 2%;
+			background: black url(../assets/images/about_bg.jpg) top center no-repeat;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			&.shadow {
+			   -moz-box-shadow:    0 0 5px #4FA199;
+			   -webkit-box-shadow: 0 0 5px #4FA199;
+			   box-shadow:         0 0 5px #4FA199;
+			}
+			
+			h3 {
+				text-align: center;
+				font-size: 18px;
+				font-family: 'quantico_bold', helvetica, sans-serif;
+				color: white;
+			}
+			
+			input[type=submit], input[type=text] {
+				text-align: center;
+				display: block;
+				margin: auto;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				font-family: 'quantico_reg', helvetica, sans-serif;
+			}
+			
+			input[type=submit] {
+				margin: 30px auto;
+				text-transform: uppercase;
+				background: none;
+				border: none;
+				font-family: 'quantico_bold', helvetica, sans-serif;
+				color: black;
+				background: black url(../assets/images/nav_bg-blue.png) repeat-x top left;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				padding: 5px 16px;
+			}
+			
+			label {
+				color: white;
+				font-family: 'quantico_bold', helvetica, sans-serif;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 30px;
+			}
+			
+		}
+		
+	}	
+}
+
 /**end pre-order section**/
 
 @media only screen and (max-width: 1050px) {
