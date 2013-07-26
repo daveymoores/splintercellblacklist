@@ -397,13 +397,13 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    var x = $(this).attr('data-pos');
 
 	    if(x == 'the_game') {
-		  $.scrollTo( '#flash_wrapper', 800, {easing:'swing', offsetTop: '10px'});
+		  $.scrollTo( ($('#flash_wrapper').offset().top-10), 800, {easing:'swing'});
 	    } else if (x == 'weapons') {
-	      $.scrollTo( '#weapons', 800, {easing:'swing'});
+	      $.scrollTo( ($('#weapons').offset().top-70), 800, {easing:'swing'});
 	    } else if (x == 'screenshots') {
-	      $.scrollTo( '#screenshots', 800, {easing:'swing'});
+	      $.scrollTo( ($('#screenshots').offset().top-70), 800, {easing:'swing'});
 	    } else if (x == 'preorder'){
-	      $.scrollTo( '#the_game', 800, {easing:'swing'});
+	      $.scrollTo( ($('#the_game').offset().top-70), 800, {easing:'swing'});
 	    }
 
 	    console.log('scrolling to >>> ' + x);
@@ -418,7 +418,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	  
 	  $('#preorder').on('click', function(){
 
-	    $.scrollTo( '#the_game', 800, {easing:'swing'});
+	    $.scrollTo( '#the_game', 800, {easing:'swing', offsetTop: '70px'});
 
 	  });
 
