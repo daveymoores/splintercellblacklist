@@ -35,12 +35,12 @@ if (isset($_COOKIE["age"]))
 	<!-- Set the viewport width to device width for mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Hub template</title>
+	<title>Splinter Cell - Stop the Blacklist</title>
 
-	<meta property="og:title" content="SITENAME">
+	<meta property="og:title" content="Splinter Cell - Stop the Blacklist">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="">
-    <meta property="og:url" content="NEWURLPLEASE">
+    <meta property="og:url" content="http://uk-microsites.ign.com/splintercellblacklist/">
     <meta property="og:image" content="">
     <meta property="fb:admins" content="546507370">
     
@@ -67,33 +67,26 @@ if (isset($_COOKIE["age"]))
 
 </head>
 <body>
-<!-- <section id="debris" data-type="background" data-speed="2"></section>
-<section id="debris_2" data-type="background" data-speed="6"></section>
-<section id="debris_3" data-speed="10"></section> -->
+
 <section id="hex" data-type="background" data-speed="2"></section>
 <section id="hex_2" data-type="background" data-speed="6"></section>
 <section id="hex_3" data-type="background" data-speed="10"></section>
 
-<!--particles-->
-<!-- <section id="particle" data-type="background" data-speed="2"></section>
-<section id="particle_2" data-type="background" data-speed="6"></section>
-<section id="particle_3" data-type="background" data-speed="10"></section> -->
-<!--end particles-->
 
 <article>
     <header>
 		<div id="ignHeader" class="clear">
-			<!-- <ul class="social-btns">
+			<ul class="social-btns">
 	                <li>
-	                    <div class="fb-like" data-href="NEWURLPLEASE" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
+	                    <div class="fb-like" data-href="http://uk-microsites.ign.com/splintercellblacklist/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false"></div>
 	                </li>
 
-	                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="NEWURLPLEASE" data-text="" data-via="IGNUK">Tweet</a></li>
+	                <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://uk-microsites.ign.com/splintercellblacklist/" data-text="" data-via="IGNUK">Tweet</a></li>
 
-	                <li>
-	                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="NEWURLPLEASE"></div>
-	                </li>
-	            </ul> -->
+	                <!-- <li>
+	                    <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://uk-microsites.ign.com/splintercellblacklist/"></div>
+	                </li> -->
+	            </ul>
 				
 				<div id="ignHeader-userBar">
 					<div class="container"> <a id="ignHeader-logo" href="http://uk.ign.com/"></a>
@@ -105,11 +98,11 @@ if (isset($_COOKIE["age"]))
         <nav id="nav" class="fixedNav">
             <div class="row">
                 <ul class="large-12 columns">
-                    <li data-pos="the_game"><a href="#_">THE GAME</a></li>
-                    <li data-pos="weapons"><a href="#_">GADGETS</a></li>
+                    <li data-pos="the_game"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'the game'">THE GAME</a></li>
+                    <li data-pos="weapons"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'gadgets'">GADGETS</a></li>
                     <li class="logo"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></li>
-                    <li data-pos="screenshots"><a href="#_">SCREENSHOTS</a></li>
-                    <li data-pos="preorder"><a href="#_">PRE-ORDER</a></li>
+                    <li data-pos="screenshots"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'screenshots'">SCREENSHOTS</a></li>
+                    <li data-pos="preorder"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'pre-order nav'">PRE-ORDER</a></li>
                 </ul>
                 <a href="#_" ><span id="preorder" class="pre-order_btn"></span></a>
             </div>
@@ -168,9 +161,9 @@ if (isset($_COOKIE["age"]))
 			</div>
 
 			<div id="final_gadg-cont">
-				<div class="web"><img src="assets/images/web.png"></div>
+				<div class="web"><img src="assets/images/web.png" alt="web"></div>
 				<div class="libya"><span>EMP</span></div>
-				<div class="big_folder"><img src="" alt="" ></div>
+				<div class="big_folder"><img src="value" alt="" ></div>
 				
 				<a id="close"><span></span> CLOSE</a>
 
@@ -182,12 +175,10 @@ if (isset($_COOKIE["age"]))
 				<div data-name="TRIROTOR" class="gadget_info hidden">
 					<h4>RECON &amp; DISTRACTION</h4>
 					<p>A remote-pilotable flying drone that fires Sticky Shocker darts. Its rotors can be heard by hostiles if you fly too close.</p>
-<p>Use the Tri-Rotor to:<br>
-Scout out areas and Mark hostiles, or attract enemies.</p>
-<p>Upgrade to gain the ability Self-Destruct and emit sonar pulses
-Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators cannot jam the Tri-Rotor’s main video frequency.</p>
-					
-				</div>
+                    <p>Use the Tri-Rotor to:<br>
+                   Scout out areas and Mark hostiles, or attract enemies.</p>
+                    <p>Upgrade to gain the ability Self-Destruct and emit sonar pulses. Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators cannot jam the Tri-Rotor’s main video frequency.</p>
+                </div>
 				
 				<div data-name="GOGGLES" class="gadget_info hidden">
 					<h4>VISION MODES</h4>
@@ -219,6 +210,9 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
 
             <div class="slider-wrapper theme-default">
                 <div id="slider" class="nivoSlider">
+                    <img src="assets/carousel_images/slide_10.jpg" data-thumb="assets/carousel_images/slide_10.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_11.jpg" data-thumb="assets/carousel_images/slide_11.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_14.jpg" data-thumb="assets/carousel_images/slide_14.jpg" alt="" />
                     <img src="assets/carousel_images/slide_1.jpg" data-thumb="assets/carousel_images/slide_1.jpg" alt="" />
                     <img src="assets/carousel_images/slide_2.jpg" data-thumb="assets/carousel_images/slide_2.jpg" alt="" />
                     <img src="assets/carousel_images/slide_3.jpg" data-thumb="assets/carousel_images/slide_3.jpg" alt="" />
@@ -226,6 +220,14 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
                     <img src="assets/carousel_images/slide_5.jpg" data-thumb="assets/carousel_images/slide_5.jpg" alt="" />
                     <img src="assets/carousel_images/slide_6.jpg" data-thumb="assets/carousel_images/slide_6.jpg" alt="" />
                     <img src="assets/carousel_images/slide_7.jpg" data-thumb="assets/carousel_images/slide_7.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_8.jpg" data-thumb="assets/carousel_images/slide_8.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_9.jpg" data-thumb="assets/carousel_images/slide_9.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_12.jpg" data-thumb="assets/carousel_images/slide_12.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_13.jpg" data-thumb="assets/carousel_images/slide_13.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_15.jpg" data-thumb="assets/carousel_images/slide_15.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_16.jpg" data-thumb="assets/carousel_images/slide_16.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_17.jpg" data-thumb="assets/carousel_images/slide_17.jpg" alt="" />
+                    <img src="assets/carousel_images/slide_18.jpg" data-thumb="assets/carousel_images/slide_18.jpg" alt="" />
                 </div>
             </div>
             
@@ -241,18 +243,25 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
             	<div class="about_container">
             		
             		<h2>ABOUT THE GAME <span></span></h2>
-            		<span class="empty_block"><span class="full_block"></span></span>
+            		<div class="empty_block">
+                        <span class="full_block"></span>
+                    </div>
 
-            		<p>The United States has a military presence in two thirds of the countries around the world. A group of 12 have had enough and initiate a terror ultimatum called the Blacklist – a deadly countdown of escalating terrorist attacks on US interests. Sam Fisher is the leader of the newly formed Fourth Echelon unit: a clandestine unit that answers solely to the President of the United States. Sam and his team must hunt down these terrorists by any means necessary, and stop the Blacklist countdown before it reaches zero.</p>
-            		<br>
-            		<p>A load of secondary info that relates to ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
+            		<p><b>Splinter Cell Blacklist</b> opens with the United States government under siege and powerless to mount a traditional response to an unknown enemy. A radical terrorist group, whose members are known as the Engineers, has formed to contest America’s military presence in 153 countries around the world. The Engineers vow to enact a countdown of violence they have dubbed The Blacklist; a series of catastrophic attacks against US targets designed to inflict maximum damage and cause high-profile casualties.     
+To combat the threat posed by this elusive group, President Patricia Caldwell forms the Fourth Echelon. Rising from the ashes of its disgraced and disbanded predecessor agency, the Fourth Echelon is formed of both familiar and new faces alike as Anna “Grim” Grímsdóttir and Vic Coste are joined by brilliant hacker but inexperienced agent, Charlie Cole.</p>
+
+<p>The Fourth Echelon operates aboard its mobile HQ, The Paladin, and is led by Sam Fisher, a man who is equal parts shadow operative, combat specialist and black-ops legend. To facilitate his fight against the Engineers, President Caldwell grants Fisher the Fifth Freedom. This ratifies a no-questions-asked policy that enables Fisher and his team to achieve their objectives by any means necessary as they race to neutralise the Engineers before the group execute every target on the Blacklist.</p>
+
+<p>To reflect Fisher’s freedom and ability to operate outside of established protocols, Ubisoft has broadened the potential for varied player expression in its most flexible Splinter Cell title to date. Three core styles are available to the player in Splinter Cell Blacklist: Ghost rewards a non-lethal approach, Panther facilitates graceful takedowns and Assault turns Fisher into a one-man army. All three approaches will yield results, so it’s up to each individual player to decide how best to respond to the threat posed by the Engineers.</p>
+
+<p>Expanding the scope of Splinter Cell Blacklist yet further is Ubisoft’s ShadowNet and Spider-Bot. ShadowNet enables players to join an online Cell that best suits their in-game tactics, while also gaining access to challenges and unlocking exclusive game content. Meanwhile, the Splinter Cell Spider-Bot smart phone app offers players a unique way of staying connected to the Splinter Cell universe and competing against their friends in a top-down action experience.</p>
 
             		<div class="pre-order_section">
             			<img class="logo" src="assets/images/sc_logo-pre-order.png" alt="">
             			<div class="clearfix"></div>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img src="assets/images/special_packshots.png" alt=""></a>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img class="sc_button" src="assets/images/pre_order-game.png" alt=""></a>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank"><img class="game_packs" src="assets/images/game_packshots.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img src="assets/images/special_packshots.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img class="sc_button" src="assets/images/pre_order-game.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img class="game_packs" src="assets/images/game_packshots.png" alt=""></a>
             		</div>
             	</div>
         	</div>
@@ -264,8 +273,7 @@ Sonar is unavailable in Perfectionist or near Drone Operators. Drone Operators c
 
     <footer>
         <div class="top_btn"><a href="#_">TOP</a></div>
-        <div class="row">
-            <div class="large-12 columns">
+        <div class="row">sc
                 <img class="logos" src="assets/images/logos.jpg" alt="All logos" />
 
                 <p class="small_text">© 2002–2013 Ubisoft Entertainment. All Rights Reserved. Tom Clancy’s, Splinter Cell, Blacklist, Sam Fisher, the Soldier Icon, Ubisoft, and the Ubisoft logo are trademarks of Ubisoft Entertainment in the US and/or other countries. 
@@ -473,7 +481,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	  	var gadget = $(this).attr('src');
 	  	var gadgName = $(this).attr('alt');
 
-	  	console.log(gadget);
+	  	 _gaq.push(['_trackEvent', 'gadget', 'clicked', gadgName]);
 
 	    $('.file_cont').animate({ opacity: 0}, function(){
 	    	$(this).hide();
@@ -534,7 +542,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-15279170-1']);
-	  _gaq.push(['_trackPageview', 'CAMPAIGNNAME']);
+	  _gaq.push(['_trackPageview', 'splinter-cell']);
 	
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -557,7 +565,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	
-	<script type="text/javascript">
+	<!--script type="text/javascript">
 	  window.___gcfg = {lang: 'en-GB'};
 	
 	  (function() {
@@ -565,7 +573,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    po.src = 'https://apis.google.com/js/plusone.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 	  })();
-	</script>
+	</script-->
 
   <!-- Begin comScore Tag -->
 	<script>
