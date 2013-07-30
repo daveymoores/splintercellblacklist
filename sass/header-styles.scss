@@ -168,6 +168,39 @@ nav {
 }
 /**end Blacklist Menu**/
 
+/**blacklist menu amends**/
+nav {
+  .row {
+    ul {
+      width: 110%;
+      margin-left: -10%;
+
+      li {
+        width: 14%;
+      }
+    }
+    width: 120%;
+
+    .the_game, .scbl  {
+      padding-top: 16px;
+      line-height: 18px; 
+    }
+
+    .preorder {
+      float: right;
+    }
+
+    .screenshots {
+
+    }
+
+    .logo {
+      width: 29%;
+    }
+  }
+}
+/**end amends**/
+
 /**pre-order button**/
 
 .pre-order_btn {

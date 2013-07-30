@@ -67,6 +67,9 @@ if (isset($_COOKIE["age"]))
 
 </head>
 <body>
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
 
 <section id="hex" data-type="background" data-speed="2"></section>
 <section id="hex_2" data-type="background" data-speed="6"></section>
@@ -98,13 +101,14 @@ if (isset($_COOKIE["age"]))
         <nav id="nav" class="fixedNav">
             <div class="row">
                 <ul class="large-12 columns">
-                    <li data-pos="the_game"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'the game'">THE GAME</a></li>
-                    <li data-pos="weapons"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'gadgets'">GADGETS</a></li>
-                    <li class="logo"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></li>
-                    <li data-pos="screenshots"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'screenshots'">SCREENSHOTS</a></li>
-                    <li data-pos="preorder"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'pre-order nav'">PRE-ORDER</a></li>
+                    <li data-pos="the_game" class="the_game"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'stop the blacklist'])">STOP THE BLACKLIST</a></li>
+                    <li data-pos="weapons" class="weapons"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'gadgets'])">GADGETS</a></li>
+                    <li data-pos="screenshots" class="screenshots"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'screenshots'])">SCREENSHOTS</a></li>
+                    <li class="logo"><a href="http://splintercell.ubi.com/blacklist/en-GB/home/index.aspx"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
+                    <li data-pos="scbl" class="scbl"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'splinter cell blacklist'])">SPLINTER CELL BLACKLIST</a></li>
+                    <li class="preorder"><a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'pre-order nav'])">PRE-ORDER</a></li>
                 </ul>
-                <a href="#_" ><span id="preorder" class="pre-order_btn"></span></a>
+                <a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'pre-order nav'])"><span id="preorder" class="pre-order_btn"></span></a>
             </div>
         </nav>
 	</header>
@@ -116,9 +120,10 @@ if (isset($_COOKIE["age"]))
 				<img src="assets/images/stb_logo.png" alt="Beat The Blacklist Logo">
 				<img class="sam" src="assets/images/sam.png" alt="Sam Fisher">
 				<div class="holder_instructional">
-					<h3 class="tango">ARE YOU SMART ENOUGH TO JOIN THE ELITE RANKS OF THE <br>FOURTH ECHELON?</h3>
-					<p>Prove your mental acuity by solving one of our four intel puzzles over the next month, and you’ll be entered into our grand prize draw for the chance to win weekly spot prizes or our top prize of a <b>gaming PC powered by Nvidia GeForce GTX 780.</b></p>
-				</div>
+					<h3 class="tango">JOIN THE ELITE RANKS OF THE FOURTH ECHELON</h3>
+					<p>Solve one of the four intel puzzles dropping every Monday over the next four weeks, and you’ll be entered into our grand prize draw for the chance to win weekly spot prizes or our top prize of a <b>gaming PC powered by Nvidia GeForce GTX 780</b>.
+				    <br>Click the <span style="color: #AECD57;">green marker</span> on the West coast of the USA to select your first mission...</p>
+                </div>
 			</div>
 		</div>
 	</section>
@@ -142,13 +147,13 @@ if (isset($_COOKIE["age"]))
         <div class="large-12 columns">
             <h2 class="black">GADGETS</h2>
 
-
-			<div class="file_cont">
-				<div class="name folder_1"><a href="#_">EMP</a></div>
-				<div class="name folder_2"><a href="#_">TRIROTOR</a></div>
-				<div class="name folder_3"><a href="#_">GOGGLES</a></div>
-				<div class="name folder_4"><a href="#_">STICKY CAM</a></div>
+            <h3>CHOOSE A GADGET:</h3>
+			<div class="file_cont names">
 				<div class="name folder_5"><a href="#_">STICKY NOISEMAKER</a></div>
+                <div class="name folder_1"><a href="#_">EMP</a></div>
+                <div class="name folder_2"><a href="#_">TRIROTOR</a></div>
+                <div class="name folder_3"><a href="#_">GOGGLES</a></div>
+                <div class="name folder_4"><a href="#_">STICKY CAM</a></div>
 			</div>
 
 
@@ -156,8 +161,8 @@ if (isset($_COOKIE["age"]))
 				<div class="file folder_1"><img src="assets/gadgets/EMP.png" alt="EMP" ></div>
 				<div class="file folder_2"><img src="assets/gadgets/TRIROTOR.png" alt="TRIROTOR" ></div>
 				<div class="file folder_3"><img src="assets/gadgets/GOGGLES.png" alt="GOGGLES" ></div>
-				<div class="file folder_4"><img src="assets/gadgets/STICKY_CAM.png" alt="STICKY-CAM" ></div>
-				<div class="file folder_5"><img src="assets/gadgets/STICKY_NOISEMAKER.png" alt="STICKY-NOISEMAKER" ></div>
+				<div class="file folder_4"><img src="assets/gadgets/STICKY_CAM.png" alt="STICKY CAM" ></div>
+				<div class="file folder_5"><img src="assets/gadgets/STICKY_NOISEMAKER.png" alt="STICKY NOISEMAKER"></div>
 			</div>
 
 			<div id="final_gadg-cont">
@@ -187,12 +192,12 @@ if (isset($_COOKIE["age"]))
 					<p>Sonar goggles periodically emit a supersonic pulse to detect hostiles behind walls. They can also detect Mines and Security Systems. Upgrade your Sonar Goggles to increase their range and sensitivity. On Perfectionist difficulty, Sonar Goggles cannot see through walls.</p>
 				</div>
 				
-				<div data-name="STICKY-CAM" class="gadget_info hidden">
+				<div data-name="STICKY CAM" class="gadget_info hidden">
 					<h4>RECON &amp; DISTRACTION</h4>
 					<p>A remote camera that can be thrown onto walls or other surfaces to offer a second set of eyes. Use it to watch your own back, or scout from new vantage points. Once upgraded, the camera can also Self-Destruct to stun or kill nearby hostiles.</p>
 				</div>
 				
-				<div data-name="STICKY-NOISEMAKER" class="gadget_info hidden">
+				<div data-name="STICKY NOISEMAKER" class="gadget_info hidden">
 					<h4>RECON &amp; DISTRACTION</h4>
 					<p>Use it to create an opening to slip through patrols, or lure hostiles into a trap. This tiny speaker can be thrown onto walls and surfaces to distract guards from their posts.</p>
 				</div>
@@ -247,21 +252,26 @@ if (isset($_COOKIE["age"]))
                         <span class="full_block"></span>
                     </div>
 
-            		<p><b>Splinter Cell Blacklist</b> opens with the United States government under siege and powerless to mount a traditional response to an unknown enemy. A radical terrorist group, whose members are known as the Engineers, has formed to contest America’s military presence in 153 countries around the world. The Engineers vow to enact a countdown of violence they have dubbed The Blacklist; a series of catastrophic attacks against US targets designed to inflict maximum damage and cause high-profile casualties.     
-To combat the threat posed by this elusive group, President Patricia Caldwell forms the Fourth Echelon. Rising from the ashes of its disgraced and disbanded predecessor agency, the Fourth Echelon is formed of both familiar and new faces alike as Anna “Grim” Grímsdóttir and Vic Coste are joined by brilliant hacker but inexperienced agent, Charlie Cole.</p>
+            		<p>Splinter Cell Blacklist opens with the United States government under siege and powerless to mount a traditional response to an unknown enemy. A radical terrorist group, whose members are known as the Engineers, has formed to contest America’s military presence in 153 countries around the world. The Engineers vow to enact a countdown of violence they have dubbed The Blacklist; a series of catastrophic attacks against US targets designed to inflict maximum damage and cause high-profile casualties.</p>  
 
-<p>The Fourth Echelon operates aboard its mobile HQ, The Paladin, and is led by Sam Fisher, a man who is equal parts shadow operative, combat specialist and black-ops legend. To facilitate his fight against the Engineers, President Caldwell grants Fisher the Fifth Freedom. This ratifies a no-questions-asked policy that enables Fisher and his team to achieve their objectives by any means necessary as they race to neutralise the Engineers before the group execute every target on the Blacklist.</p>
+<p>To combat the threat posed by this elusive group, President Patricia Caldwell forms the Fourth Echelon. Rising from the ashes of its disgraced and disbanded predecessor agency, the Fourth Echelon is formed of both familiar and new faces alike as Anna “Grim” Grímsdóttir and Vic Coste are joined by brilliant hacker but inexperienced agent, Charlie Cole.</p>
+
+<p>The Fourth Echelon operates aboard its mobile HQ, The Paladin, and is led by Sam Fisher, a man who is equal parts shadow operative, combat specialist and black-ops legend. To facilitate his fight against the Engineers, President Caldwell grants Fisher the Fifth Freedom. This ratifies a no-questions-asked policy that enables Fisher and his team to achieve their objectives by any means necessary as they race to neutralise the Engineers before the group execute every target on the Blacklist.</p>   
 
 <p>To reflect Fisher’s freedom and ability to operate outside of established protocols, Ubisoft has broadened the potential for varied player expression in its most flexible Splinter Cell title to date. Three core styles are available to the player in Splinter Cell Blacklist: Ghost rewards a non-lethal approach, Panther facilitates graceful takedowns and Assault turns Fisher into a one-man army. All three approaches will yield results, so it’s up to each individual player to decide how best to respond to the threat posed by the Engineers.</p>
 
-<p>Expanding the scope of Splinter Cell Blacklist yet further is Ubisoft’s ShadowNet and Spider-Bot. ShadowNet enables players to join an online Cell that best suits their in-game tactics, while also gaining access to challenges and unlocking exclusive game content. Meanwhile, the Splinter Cell Spider-Bot smart phone app offers players a unique way of staying connected to the Splinter Cell universe and competing against their friends in a top-down action experience.</p>
+<p>Expanding the scope of Splinter Cell Blacklist yet further is Ubisoft’s take on competitive and co-operative multiplayer, along with the ShadowNet experience. Spies vs Mercs returns with its classic 2 vs 2 mode and an expanded 4 vs 4 Blacklist edition, which adds a greater number of customisation and loadout options. As a Spy, you play from a third-person perspective and utilise Splinter Cell hallmarks like Death From Above while hacking terminals to score points. Swap roles to play as a heavily armed merc and you’ll hunt your prey in first-person mode as you seek to shut down the hack attacks.</p>
+
+<p>Meanwhile, Splinter Cell Blacklist’s co-op modes are designed to be closely integrated with the single-player narrative experience. Partnering Sam Fisher with different members of the Fourth Echelon team reveals varied mission types that draw on Blacklist’s Ghost, Panther and Assault play-styles to offer a broad range of experiences. Co-op levels feature branching paths and facilitate a flexibility of approach for whatever partnership you choose.</p>
+
+<p>Supporting the entire Blacklist experience is ShadowNet, which enables players to join an online Cell that best suits their in-game tactics, while also gaining access to challenges and unlocking exclusive game content. All of these elements combine to make Splinter Cell Blacklist the most comprehensive Sam Fisher experience to date. </p>
 
             		<div class="pre-order_section">
             			<img class="logo" src="assets/images/sc_logo-pre-order.png" alt="">
             			<div class="clearfix"></div>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img src="assets/images/special_packshots.png" alt=""></a>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img class="sc_button" src="assets/images/pre_order-game.png" alt=""></a>
-            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'"><img class="game_packs" src="assets/images/game_packshots.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'])"><img src="assets/images/special_packshots.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'])"><img class="sc_button" src="assets/images/pre_order-game.png" alt=""></a>
+            			<a href="http://www.game.co.uk/webapp/wcs/stores/servlet/HubArticleView?hubId=170494&articleId=170495&catalogId=10201&langId=44&storeId=10151" target="_blank" onClick="_gaq.push(['_trackEvent', 'pre-order', 'clicked', 'pre-order bottom btn'])"><img class="game_packs" src="assets/images/game_packshots.png" alt=""></a>
             		</div>
             	</div>
         	</div>
@@ -324,6 +334,30 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
   </script-->
 
   <script>
+
+  // function removeActive(){
+  //   $('#nav').find('.active').removeClass('active');
+  // }
+
+  // $('#flash_wrapper').waypoint(function() {
+  //       removeActive();
+  //       $('#nav').find('.the_game').addClass('active');
+  //   });
+
+  //   $('#weapons').waypoint(function() {
+  //       removeActive();
+  //       $('#nav').find('.weapons').addClass('active');
+  //   });
+
+  //   $('#screenshots').waypoint(function() {
+  //       removeActive();
+  //       $('#nav').find('.screenshots').addClass('active');
+  //   });
+
+  //   $('#the_game').waypoint(function() {
+  //       removeActive();
+  //       $('#nav').find('.scbl').addClass('active');
+  //   });
 	
 	
   	//code for switch backgrounds on nav items
@@ -410,7 +444,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	      $.scrollTo( ($('#weapons').offset().top-70), 800, {easing:'swing'});
 	    } else if (x == 'screenshots') {
 	      $.scrollTo( ($('#screenshots').offset().top-70), 800, {easing:'swing'});
-	    } else if (x == 'preorder'){
+	    } else if (x == 'scbl'){
 	      $.scrollTo( ($('#the_game').offset().top-70), 800, {easing:'swing'});
 	    }
 
@@ -423,12 +457,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    $.scrollTo( '#ignHeader', 800, {easing:'swing'});
 
 	  });
-	  
-	  $('#preorder').on('click', function(){
 
-	    $.scrollTo( '#the_game', 800, {easing:'swing', offsetTop: '70px'});
-
-	  });
 
   	function spin(cName){
 
@@ -455,31 +484,34 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
   	}
 
   	spin('file');
-  	spin('name');
 
 
   //animate direction
-	 $('.file').mouseover(function(){
+	 // $('.name').mouseover(function(){
 
-	    var fileNum = $(this).attr('class').charAt(12);
+	 //    var fileNum = $(this).attr('class').charAt(12);
 
 
-	  });
+	 //  });
 
-	    $('.file').mouseout(function(){
+	 //   $('.name').mouseout(function(){
 
-	        var fileNum = $(this).attr('class').charAt(12);
+	 //        var fileNum = $(this).attr('class').charAt(12);
 
-	  });
+	 //  });
 	  
 	  var parDiv = $('#final_gadg-cont');
 	  
 	  $('#close').hide();
 
-	  $('.file').on('click', 'img', function(){
+	  $('.name').on('click', 'a', function(){
 
-	  	var gadget = $(this).attr('src');
-	  	var gadgName = $(this).attr('alt');
+        //remove styling classes
+        $('.libya').removeClass('sticky');
+        $('.big_folder').removeClass('goggles');
+
+	  	var gadget = $('#weapons').find('.active').attr('src');
+	  	var gadgName = $(this).text();
 
 	  	 _gaq.push(['_trackEvent', 'gadget', 'clicked', gadgName]);
 
@@ -487,11 +519,18 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    	$(this).hide();
 	    });
 	    parDiv.find('.big_folder').children().attr('src', gadget).end().show().delay(300).animate({ opacity: 1 });
+        $('#weapons').find('h3').animate({ opacity: 0 });
 	    parDiv.find('.libya').children().text(gadgName).end().show().delay(300).animate({ opacity: 1, top: 100 });
 	    parDiv.find('.web').show().delay(300).animate({ opacity: 1}, 200);
 		$('#close').show().animate({opacity: 1}, 200); 
 		
 		parDiv.find("[data-name='" + gadgName + "']").removeClass('hidden').animate({ opacity: 1, bottom: 0});
+
+        if(gadgName == 'STICKY NOISEMAKER') {
+            $('.libya').addClass('sticky');
+        } else if(gadgName == 'GOGGLES') {
+            $('.big_folder').addClass('goggles');
+        }
 		
 	  });
 	  
@@ -504,24 +543,36 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 		  return lastChar;
 	  }
 	  
-	  $('.file').mouseover(function(){	  
+	  $('.name').mouseover(function(){	  
 		 
 		  var lastChar = findLabel($(this));
-		  $('.name.folder_' + lastChar).find('a').stop().animate({ opacity : 1 }, 200);  
+
+          $(this).find('a').stop().animate({ opacity : 1 }, 200);  
+
+          console.log(lastChar);
+          $('.file').find('img').stop().animate({ opacity : 0.3 }, 600);
+		  $('.file.folder_' + lastChar).find('img').addClass('active').stop().animate({ opacity : 1 }, 200);  
 
 	  });
 	  
-	  $('.file').mouseout(function(){
+	  $('.name').mouseout(function(){
+
+          $(this).find('a').stop().animate({ opacity : 0.6 }, 200);  
 		  
 		  var lastChar = findLabel($(this));	  
-		  $('.name.folder_' + lastChar).find('a').stop().animate({ opacity : 0.1 }, 800);  
+		  $('.file.folder_' + lastChar).find('img').removeClass('active').stop().animate({ opacity : 0.3 }, 800);  
 
 	  });
+
+      $('.names').mouseout(function(){  
+            $('.file').find('img').stop().animate({ opacity : 1 }, 600);
+      });
 
 	  parDiv.on('click', '#close', function(){
 		   
 	    parDiv.find('.big_folder').animate({ opacity: 0}, function(){ $(this).hide(); });
 	    $('.file_cont').show().delay(300).animate({ opacity: 1 }, 1000);
+        $('#weapons').find('h3').animate({ opacity: 1 });
 	    parDiv.find('.libya').animate({ opacity: 0, top: 60 }, function(){ $(this).hide(); });
 	    parDiv.find('.web').delay(300).animate({ opacity: 0}, 50, function(){ $(this).hide(); });
 		$('#close').animate({opacity: 0}, 200, function(){
@@ -585,12 +636,22 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 	    el.parentNode.insertBefore(s, el);
 	  })();
 	</script>
-	<noscript>
+<!-- 	<noscript>
 	  <img src="http://b.scorecardresearch.com/p?c1=2&c2=3000068&cv=2.0&cj=1" />
-	</noscript>
+	</noscript> -->
    <!-- End comScore Tag -->
    <!--
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 -->
+
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $("#status").fadeOut(); // will first fade out the loading animation
+            $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+        })
+    //]]>
+</script>
 </body>
 </html>

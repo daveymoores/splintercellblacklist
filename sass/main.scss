@@ -44,6 +44,12 @@ section.content {
 			.columns {
 				height: 100%
 			}
+
+			h3 {
+				font-family: 'quantico_BOLD', Helvetica, sans-serif; 
+				font-size: 18px;
+				margin: 0px 0px 0px 22px;
+			}
 		}
 	}
 
@@ -111,6 +117,7 @@ section.content {
 					font-weight: normal;
 					font-size: 13px;
 					width: 61%;
+					font-family: 'quantico_reg', Helvetica, sans-serif; 
 				}
 		}
 
@@ -339,24 +346,31 @@ section.content {
 	margin-left: 270px;
 	margin-top: 200px;
 
-	&:hover {
-		cursor: pointer;
+
+}
+
+.file {
+	img {
+		opacity: 1;
 	}
 }
 
 .name {
 
-	margin-left: 240px;
-	margin-top: 180px;
+	&:hover {
+		cursor: pointer;
+	}
+
+	margin-left: 20px;
+	margin-top: 10px;
 
 	a {
-		 font-family: 'din', Helvetica, sans-serif; 
+		 font-family: 'quantico_reg', Helvetica, sans-serif; 
 		 color: black;
 		 padding: 2px;
-		 font-size: 30px;
-		 opacity: 0.1;
-		 text-align: center;
-		 float: right;
+		 font-size: 18px;
+		 opacity: 0.6;
+		 text-align: left;
 	}
 }
 
@@ -364,43 +378,32 @@ section.content {
 	height: 100%;
 }
 
-/*.folder_1 {
-	background: transparent url('../assets/gadgets/EMP.png') no-repeat;
-}
-
-.folder_2 {
-	background: transparent url('../assets/gadgets/GOOGLES.png') no-repeat;
-}
-
-.folder_3 {
-	background: transparent url('../assets/gadgets/STICKY_CAM.png') no-repeat;
-}
-
-.folder_4 {
-	background: transparent url('../assets/gadgets/STICKY_NOISEMAKER.png') no-repeat;
-}
-
-.folder_5 {
-	background: transparent url('../assets/gadgets/TRIROTOR.png') no-repeat;
-}*/
 
 .big_folder {
 	height: auto;
 	width: auto;
 	left: 50%;
 	margin-left: -135px;
-	margin-top: 120px;
+	margin-top: 100px;
 	display: none;
 	opacity: 0; 
 	cursor: pointer;
 	z-index: 200;
 	position: absolute;
+
+	&.goggles {
+		margin-top: 50px;
+	}
 }
 
 .file_cont {
 	position: absolute;
 	z-index: 99;
 	margin-top: -110px;
+
+	&.names {
+		margin-top: 20px;
+	}
 }
 
 .libya {
@@ -409,13 +412,17 @@ section.content {
 	top: 60px;
 	z-index: 100;
 	opacity: 0;
-	font-size: 100px;
+	font-size: 90px;
 	text-align: right;
 	float: right;
 	color: black;
-	font-family: 'din', Helvetica, sans-serif;
+	font-family: 'din', Helvetica, sans-serif; 
 	width: 78%; 
 	display: none;
+
+	&.sticky {
+		font-size: 79px;
+	}
 }
 
 .web {
@@ -435,7 +442,7 @@ section.content {
 	margin-left: 25px;
 	margin-top: 30px;
 	position: absolute;
-	font-family: 'din', helvetica, sans-serif;
+	font-family: 'quantico_reg', Helvetica, sans-serif; 
 	color: black;
 	
     -webkit-transition:color 0.3s ease-in;  
@@ -487,7 +494,7 @@ section.content {
 
 section.the_game {
 	
-	height: 850px;
+	height: 1050px;
 
 	.about_container {
 		background: url(../assets/images/about_bg.jpg);
@@ -530,6 +537,7 @@ section.the_game {
 			font-size: 13px;
 			font-weight: 300;
 			margin-bottom: 15px;
+			font-family: 'quantico_reg', helvetica, sans-serif;
 		}
 
 		.pre-order_section {
@@ -638,6 +646,29 @@ html, .age_gate {
 		}
 		
 	}	
+}
+
+#preloader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000; /* change if the mask should have another color then white */
+    z-index:99999; /* makes sure it stays on top */
+    opacity: 0.8;
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:10%; /* centers the loading animation vertically one the screen */
+    background-image:url(../assets/images/382.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
 /**end pre-order section**/

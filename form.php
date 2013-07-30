@@ -68,6 +68,7 @@ $html = <<< OET
         <nav id="nav" class="fixedNav">
             <div class="row">
                 <ul class="large-12 columns">
+                	<li data-pos="the_game"></li>
                     <li data-pos="the_game"></li>
                     <li data-pos="weapons"></li>
                     <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
