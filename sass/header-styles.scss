@@ -71,7 +71,7 @@ header {
   margin: auto;
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -60px;
 }
 
 #ignHeader #ignHeader-navigation {
@@ -172,14 +172,13 @@ nav {
 nav {
   .row {
     ul {
-      width: 110%;
-      margin-left: -10%;
+      width: 100%;
 
       li {
-        width: 14%;
+        width: 15%;
       }
     }
-    width: 120%;
+    width: 100%;
 
     .the_game, .scbl  {
       padding-top: 16px;
@@ -187,7 +186,7 @@ nav {
     }
 
     .preorder {
-      float: right;
+      //float: right;
     }
 
     .screenshots {
@@ -195,7 +194,7 @@ nav {
     }
 
     .logo {
-      width: 29%;
+      width: 40%;
     }
   }
 }

@@ -6735,7 +6735,7 @@ header {
   margin: auto;
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -60px;
 }
 
 /* line 77, ../sass/header-styles.scss */
@@ -6839,34 +6839,29 @@ nav ul li a:hover {
 /**blacklist menu amends**/
 /* line 173, ../sass/header-styles.scss */
 nav .row {
-  width: 120%;
+  width: 100%;
 }
 /* line 174, ../sass/header-styles.scss */
 nav .row ul {
-  width: 110%;
-  margin-left: -10%;
+  width: 100%;
 }
-/* line 178, ../sass/header-styles.scss */
+/* line 177, ../sass/header-styles.scss */
 nav .row ul li {
-  width: 14%;
+  width: 15%;
 }
-/* line 184, ../sass/header-styles.scss */
+/* line 183, ../sass/header-styles.scss */
 nav .row .the_game, nav .row .scbl {
   padding-top: 16px;
   line-height: 18px;
 }
-/* line 189, ../sass/header-styles.scss */
-nav .row .preorder {
-  float: right;
-}
-/* line 197, ../sass/header-styles.scss */
+/* line 196, ../sass/header-styles.scss */
 nav .row .logo {
-  width: 29%;
+  width: 40%;
 }
 
 /**end amends**/
 /**pre-order button**/
-/* line 206, ../sass/header-styles.scss */
+/* line 205, ../sass/header-styles.scss */
 .pre-order_btn {
   background: transparent url(../assets/images/game_pre-order.png) top center no-repeat;
   height: 160px;
@@ -6878,7 +6873,7 @@ nav .row .logo {
 
 /**end pre-order button**/
 /**fixed nav**/
-/* line 218, ../sass/header-styles.scss */
+/* line 217, ../sass/header-styles.scss */
 .stuck {
   position: fixed;
   margin-top: -40px !important;
@@ -6904,7 +6899,7 @@ article {
 /* line 16, ../sass/main.scss */
 section.content {
   height: 650px;
-  margin: 85px auto;
+  margin: 45px auto;
   width: 100%;
 }
 /* line 21, ../sass/main.scss */
@@ -7414,7 +7409,7 @@ section.content.instructional img.sam {
 /**pre-order section**/
 /* line 495, ../sass/main.scss */
 section.the_game {
-  height: 1050px;
+  height: 920px;
 }
 /* line 499, ../sass/main.scss */
 section.the_game .about_container {
@@ -7437,6 +7432,20 @@ section.the_game .about_container h2 span {
   background: transparent url(../assets/images/stripes.png) no-repeat;
 }
 /* line 518, ../sass/main.scss */
+section.the_game .about_container h3 {
+  font-family: 'quantico_bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+}
+/* line 525, ../sass/main.scss */
+section.the_game .about_container h4 {
+  font-family: 'quantico_bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+/* line 532, ../sass/main.scss */
 section.the_game .about_container .empty_block {
   border: 1px solid #66cccc;
   width: 100%;
@@ -7444,7 +7453,7 @@ section.the_game .about_container .empty_block {
   display: block;
   margin-bottom: 15px;
 }
-/* line 526, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 section.the_game .about_container .full_block {
   width: 30%;
   background-color: #66cccc;
@@ -7453,7 +7462,7 @@ section.the_game .about_container .full_block {
   float: right;
   margin-bottom: 15px;
 }
-/* line 535, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 section.the_game .about_container p {
   color: white;
   font-size: 13px;
@@ -7461,11 +7470,15 @@ section.the_game .about_container p {
   margin-bottom: 15px;
   font-family: 'quantico_reg', helvetica, sans-serif;
 }
-/* line 544, ../sass/main.scss */
+/* line 557, ../sass/main.scss */
+section.the_game .about_container span.highlight {
+  font-family: 'quantico_bold', helvetica, sans-serif;
+}
+/* line 562, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img {
   margin: 70px auto 0px;
 }
-/* line 549, ../sass/main.scss */
+/* line 567, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.logo {
   position: absolute;
   left: 50%;
@@ -7473,22 +7486,22 @@ section.the_game .about_container .pre-order_section img.logo {
   margin-left: -175px;
   margin-top: 0px;
 }
-/* line 557, ../sass/main.scss */
+/* line 575, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.game_packs {
   position: absolute;
   right: 23px;
 }
-/* line 562, ../sass/main.scss */
+/* line 580, ../sass/main.scss */
 section.the_game .about_container .pre-order_section img.sc_button {
   margin-left: 65px;
 }
 
 /**age gate styles**/
-/* line 570, ../sass/main.scss */
+/* line 588, ../sass/main.scss */
 html, .age_gate {
-  height: 120%;
+  height: 100%;
 }
-/* line 573, ../sass/main.scss */
+/* line 591, ../sass/main.scss */
 html img.btb_logo, .age_gate img.btb_logo {
   position: absolute;
   left: 50%;
@@ -7497,15 +7510,15 @@ html img.btb_logo, .age_gate img.btb_logo {
   margin-top: 140px;
   width: 400px;
 }
-/* line 582, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 html footer, .age_gate footer {
   margin-top: -30px;
 }
-/* line 586, ../sass/main.scss */
+/* line 604, ../sass/main.scss */
 html #sc_form-container, .age_gate #sc_form-container {
   height: 800px;
 }
-/* line 590, ../sass/main.scss */
+/* line 608, ../sass/main.scss */
 html #sc_form-container form, .age_gate #sc_form-container form {
   width: 35%;
   top: 350px;
@@ -7518,20 +7531,20 @@ html #sc_form-container form, .age_gate #sc_form-container form {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 601, ../sass/main.scss */
+/* line 619, ../sass/main.scss */
 html #sc_form-container form.shadow, .age_gate #sc_form-container form.shadow {
   -moz-box-shadow: 0 0 5px #4FA199;
   -webkit-box-shadow: 0 0 5px #4FA199;
   box-shadow: 0 0 5px #4FA199;
 }
-/* line 607, ../sass/main.scss */
+/* line 625, ../sass/main.scss */
 html #sc_form-container form h3, .age_gate #sc_form-container form h3 {
   text-align: center;
   font-size: 18px;
   font-family: 'quantico_bold', helvetica, sans-serif;
   color: white;
 }
-/* line 614, ../sass/main.scss */
+/* line 632, ../sass/main.scss */
 html #sc_form-container form input[type=submit], html #sc_form-container form input[type=text], .age_gate #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=text] {
   text-align: center;
   display: block;
@@ -7541,7 +7554,7 @@ html #sc_form-container form input[type=submit], html #sc_form-container form in
   border-radius: 2px;
   font-family: 'quantico_reg', helvetica, sans-serif;
 }
-/* line 624, ../sass/main.scss */
+/* line 642, ../sass/main.scss */
 html #sc_form-container form input[type=submit], .age_gate #sc_form-container form input[type=submit] {
   margin: 30px auto;
   text-transform: uppercase;
@@ -7555,7 +7568,7 @@ html #sc_form-container form input[type=submit], .age_gate #sc_form-container fo
   border-radius: 2px;
   padding: 5px 16px;
 }
-/* line 638, ../sass/main.scss */
+/* line 656, ../sass/main.scss */
 html #sc_form-container form label, .age_gate #sc_form-container form label {
   color: white;
   font-family: 'quantico_bold', helvetica, sans-serif;
@@ -7564,7 +7577,7 @@ html #sc_form-container form label, .age_gate #sc_form-container form label {
   margin-top: 30px;
 }
 
-/* line 651, ../sass/main.scss */
+/* line 669, ../sass/main.scss */
 #preloader {
   position: absolute;
   top: 0;
@@ -7578,7 +7591,7 @@ html #sc_form-container form label, .age_gate #sc_form-container form label {
   opacity: 0.8;
 }
 
-/* line 662, ../sass/main.scss */
+/* line 680, ../sass/main.scss */
 #status {
   width: 200px;
   height: 200px;
@@ -7597,13 +7610,13 @@ html #sc_form-container form label, .age_gate #sc_form-container form label {
 
 /**end pre-order section**/
 @media only screen and (max-width: 1050px) {
-  /* line 677, ../sass/main.scss */
+  /* line 695, ../sass/main.scss */
   article {
     width: 1050px;
   }
 }
 @media only screen and (max-width: 1580px) {
-  /* line 683, ../sass/main.scss */
+  /* line 701, ../sass/main.scss */
   article {
     width: 100%;
   }

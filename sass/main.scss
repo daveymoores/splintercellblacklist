@@ -15,7 +15,7 @@ article {
 
 section.content {
 	height: 650px;
-	margin: 85px auto;
+	margin: 45px auto;
 	width: 100%;
 
 	h2 {
@@ -494,7 +494,7 @@ section.content {
 
 section.the_game {
 	
-	height: 1050px;
+	height: 920px;
 
 	.about_container {
 		background: url(../assets/images/about_bg.jpg);
@@ -513,6 +513,20 @@ section.the_game {
 				width: 205px;
 				background: transparent url(../assets/images/stripes.png) no-repeat;
 			}
+		}
+
+		h3 {
+			font-family: 'quantico_bold', helvetica, sans-serif;
+			text-transform: uppercase;
+			color: white;
+			font-size: 18px;
+		}
+
+		h4 {
+			font-family: 'quantico_bold', helvetica, sans-serif;
+			text-transform: uppercase;
+			color: white;
+			font-size: 16px;
 		}
 
 		.empty_block {
@@ -538,6 +552,10 @@ section.the_game {
 			font-weight: 300;
 			margin-bottom: 15px;
 			font-family: 'quantico_reg', helvetica, sans-serif;
+		}
+
+		span.highlight {
+			font-family: 'quantico_bold', helvetica, sans-serif;
 		}
 
 		.pre-order_section {
@@ -568,7 +586,7 @@ section.the_game {
 
 /**age gate styles**/
 html, .age_gate {
-	height: 120%;
+	height: 100%;
 	
 	img.btb_logo {
 		position: absolute;

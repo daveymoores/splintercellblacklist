@@ -33,6 +33,14 @@ $html = <<< OET
 
 	<title>Splinter Cell - Stop the Blacklist</title>
 
+	<meta property="og:title" content="Splinter Cell - Stop the Blacklist">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Win a gaming PC with Splinter Cell Blacklist">
+    <meta property="og:url" content="http://uk-microsites.ign.com/splintercellblacklist/">
+    <meta property="og:image" content="http://uk-microsites.ign.com/splintercellblacklist/assets/images/StopTheBlacklist_logo.png">
+    <meta property="og:description" content="Win a gaming PC with Splinter Cell Blacklist">
+    <meta property="fb:admins" content="546507370">
+
 	<!-- Included CSS Files -->
     <link rel="stylesheet" href="stylesheets/app.css" />
 
@@ -69,7 +77,7 @@ $html = <<< OET
             <div class="row">
                 <ul class="large-12 columns">
                 	<li data-pos="the_game"></li>
-                    <li data-pos="the_game"></li>
+                    <!--li data-pos="the_game"></li-->
                     <li data-pos="weapons"></li>
                     <li class="logo"><a href="#_"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
                     <li data-pos="screenshots"></li>

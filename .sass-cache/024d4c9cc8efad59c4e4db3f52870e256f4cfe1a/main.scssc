@@ -1,7 +1,7 @@
 3.2.3 (Media Mark)
-f6a7d23a5c3e8fe017588540809c30dca3040e12
+79cdf5c04afea3acf7015ac6ce2410280407db8d
 o:Sass::Tree::RootNode
-:@template"¬./**main body styles**/
+:@template"	0/**main body styles**/
 
 body {
 	background: black url(../assets/images/background_blue-fade.jpg) no-repeat fixed top center;
@@ -18,7 +18,7 @@ article {
 
 section.content {
 	height: 650px;
-	margin: 85px auto;
+	margin: 45px auto;
 	width: 100%;
 
 	h2 {
@@ -497,7 +497,7 @@ section.content {
 
 section.the_game {
 	
-	height: 1050px;
+	height: 920px;
 
 	.about_container {
 		background: url(../assets/images/about_bg.jpg);
@@ -516,6 +516,20 @@ section.the_game {
 				width: 205px;
 				background: transparent url(../assets/images/stripes.png) no-repeat;
 			}
+		}
+
+		h3 {
+			font-family: 'quantico_bold', helvetica, sans-serif;
+			text-transform: uppercase;
+			color: white;
+			font-size: 18px;
+		}
+
+		h4 {
+			font-family: 'quantico_bold', helvetica, sans-serif;
+			text-transform: uppercase;
+			color: white;
+			font-size: 16px;
 		}
 
 		.empty_block {
@@ -541,6 +555,10 @@ section.the_game {
 			font-weight: 300;
 			margin-bottom: 15px;
 			font-family: 'quantico_reg', helvetica, sans-serif;
+		}
+
+		span.highlight {
+			font-family: 'quantico_bold', helvetica, sans-serif;
 		}
 
 		.pre-order_section {
@@ -571,7 +589,7 @@ section.the_game {
 
 /**age gate styles**/
 html, .age_gate {
-	height: 120%;
+	height: 100%;
 	
 	img.btb_logo {
 		position: absolute;
@@ -703,7 +721,7 @@ o;	;@;;;"transparent;io;	;@;;;"+url(../assets/images/grid_pattern
 width;io;;@;i ;	[ ;;;o;;@;;;"hidden;["overflow;io;;@;i ;	[ ;;;o;;@;;;"0px auto;["margin;io;;@;i ;	[ ;;;o;;@;;;"
 block;["display;i; ["article;!o;";#[o;$;#[o;%
 ;#[o;&	;'" ;["article;i;(0;)o;*;+{ ;,0;'@h;i;'@h;i;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
-650px;["height;io;;@;i ;	[ ;;;o;;@;;;"85px auto;["margin;io;;@;i ;	[ ;;;o;;@;;;"	100%;["
+650px;["height;io;;@;i ;	[ ;;;o;;@;;;"45px auto;["margin;io;;@;i ;	[ ;;;o;;@;;;"	100%;["
 width;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"#'tango', Helvetica, Sans-serif;["font-family;io;;@;i ;	[ ;;;o;;@;;;"
 white;["
 color;io;;@;i ;	[ ;;;o;;@;;;"	26px;["font-size;io;;@;i ;	[ ;;;o;;@;;;"300;["font-weight;io;;@;i ;	[ ;;;o;;@;;;"	23px;["margin;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
@@ -981,100 +999,108 @@ width;ißo;;@;i ;	[ ;;;o;;@;;;"1px solid black;["border-bot
 
 ;@;	[ ;;;["/**end gadget styles**/;iëo;
 
-;@;	[ ;;;["/**pre-order section**/;iío;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"1050px;["height;iño;;T;@;i ;	[o;;@;i ;	[ ;;;o;	;@;;;"'url(../assets/images/about_bg.jpg);iô;["background;iôo;;@;i ;	[ ;;;o;;@;;;"0px 10px;["margin;iõo;;@;i ;	[ ;;;o;;@;;;"	15px;["padding;iöo;;T;@;i ;	[
+;@;	[ ;;;["/**pre-order section**/;iío;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
+920px;["height;iño;;T;@;i ;	[o;;@;i ;	[ ;;;o;	;@;;;"'url(../assets/images/about_bg.jpg);iô;["background;iôo;;@;i ;	[ ;;;o;;@;;;"0px 10px;["margin;iõo;;@;i ;	[ ;;;o;;@;;;"	15px;["padding;iöo;;T;@;i ;	[
 o;;@;i ;	[ ;;;o;	;@;;;[o;	;@;;;"transparent;iùo;	;@;;;")url(../assets/images/opaque_grn.png);iùo;	;@;;;"repeat;iù;iù;["background;iùo;;@;i ;	[ ;;;o;;@;;;"0px;["margin;iúo;;@;i ;	[ ;;;o;;@;;;"10px 0px 0px 10px;["padding;iûo;;@;i ;	[ ;;;o;;@;;;"	24px;["font-size;iüo;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"
 right;["
 float;iÿo;;@;i ;	[ ;;;o;;@;;;"	23px;["height;i o;;@;i ;	[ ;;;o;;@;;;"
 205px;["
 width;io;;@;i ;	[ ;;;o;	;@;;;[o;	;@;;;"transparent;io;	;@;;;"&url(../assets/images/stripes.png);io;	;@;;;"no-repeat;i;i;["background;i; ["	span;!o;";#[o;$;#[o;%
 ;#[o;&	;'" ;["	span;iþ;(0;)o;*;+{ ;,0;'@;iþ;'@;iþ;iþ; ["h2;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["h2;iø;(0;)o;*;+{ ;,0;'@&;iø;'@&;iø;iøo;;T;@;i ;	[
-o;;@;i ;	[ ;;;o;;@;;;"1px solid #66cccc;["border;io;;@;i ;	[ ;;;o;;@;;;"	100%;["
-width;io;;@;i ;	[ ;;;o;;@;;;"4px;["height;i	o;;@;i ;	[ ;;;o;;@;;;"
-block;["display;i
-o;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;i; [".empty_block;!o;";#[o;$;#[o;%
-;#[o;.;'" ;["empty_block;i;)o;*;+{ ;,0;'@T;i;'@T;i;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"30%;["
-width;io;;@;i ;	[ ;;;o;;@;;;"#66cccc;["background-color;io;;@;i ;	[ ;;;o;;@;;;"3px;["height;io;;@;i ;	[ ;;;o;;@;;;"
-block;["display;io;;@;i ;	[ ;;;o;;@;;;"
+;#[o;&	;'" ;["h2;iø;(0;)o;*;+{ ;,0;'@&;iø;'@&;iø;iøo;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;io;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;io;;@;i ;	[ ;;;o;;@;;;"
+white;["
+color;i	o;;@;i ;	[ ;;;o;;@;;;"	18px;["font-size;i
+; ["h3;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["h3;i;(0;)o;*;+{ ;,0;'@N;i;'@N;i;io;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;io;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;io;;@;i ;	[ ;;;o;;@;;;"
+white;["
+color;io;;@;i ;	[ ;;;o;;@;;;"	16px;["font-size;i; ["h4;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["h4;i;(0;)o;*;+{ ;,0;'@v;i;'@v;i;io;;T;@;i ;	[
+o;;@;i ;	[ ;;;o;;@;;;"1px solid #66cccc;["border;io;;@;i ;	[ ;;;o;;@;;;"	100%;["
+width;io;;@;i ;	[ ;;;o;;@;;;"4px;["height;io;;@;i ;	[ ;;;o;;@;;;"
+block;["display;io;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;i; [".empty_block;!o;";#[o;$;#[o;%
+;#[o;.;'" ;["empty_block;i;)o;*;+{ ;,0;'@¤;i;'@¤;i;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"30%;["
+width;io;;@;i ;	[ ;;;o;;@;;;"#66cccc;["background-color;io;;@;i ;	[ ;;;o;;@;;;"3px;["height;io;;@;i ;	[ ;;;o;;@;;;"
+block;["display;i o;;@;i ;	[ ;;;o;;@;;;"
 right;["
-float;io;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;i; [".full_block;!o;";#[o;$;#[o;%
-;#[o;.;'" ;["full_block;i;)o;*;+{ ;,0;'@ˆ;i;'@ˆ;i;io;;T;@;i ;	[
+float;i!o;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;i"; [".full_block;!o;";#[o;$;#[o;%
+;#[o;.;'" ;["full_block;i;)o;*;+{ ;,0;'@Ø;i;'@Ø;i;io;;T;@;i ;	[
 o;;@;i ;	[ ;;;o;;@;;;"
 white;["
-color;io;;@;i ;	[ ;;;o;;@;;;"	13px;["font-size;io;;@;i ;	[ ;;;o;;@;;;"300;["font-weight;io;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;io;;@;i ;	[ ;;;o;;@;;;"*'quantico_reg', helvetica, sans-serif;["font-family;i; ["p;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["p;i;(0;)o;*;+{ ;,0;'@¶;i;'@¶;i;io;;T;@;i ;	[	o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"70px auto 0px;["margin;i!; ["img;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["img;i ;(0;)o;*;+{ ;,0;'@Î;i ;'@Î;i ;i o;;T;@;i ;	[
-o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i&o;;@;i ;	[ ;;;o;;@;;;"50%;["	left;i'o;;@;i ;	[ ;;;o;;@;;;"
-block;["display;i(o;;@;i ;	[ ;;;o;/;0["px;@;1"-175px;iÿQ;2[ ;i);["margin-left;i)o;;@;i ;	[ ;;;o;;@;;;"0px;["margin-top;i*; ["img.logo;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["img;i%;(0o;.;'@ÿ;["	logo;i%;)o;*;+{ ;,0;'@ÿ;i%;'@ÿ;i%;i%o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i.o;;@;i ;	[ ;;;o;;@;;;"	23px;["
-right;i/; ["img.game_packs;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["img;i-;(0o;.;'@;["game_packs;i-;)o;*;+{ ;,0;'@;i-;'@;i-;i-o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"	65px;["margin-left;i3; ["img.sc_button;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["img;i2;(0o;.;'@7;["sc_button;i2;)o;*;+{ ;,0;'@7;i2;'@7;i2;i2; [".pre-order_section;!o;";#[o;$;#[o;%
-;#[o;.;'" ;["pre-order_section;i;)o;*;+{ ;,0;'@H;i;'@H;i;i; [".about_container;!o;";#[o;$;#[o;%
-;#[o;.;'" ;["about_container;ió;)o;*;+{ ;,0;'@V;ió;'@V;ió;ió; ["section.the_game;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["section;iï;(0o;.;'@d;["the_game;iï;)o;*;+{ ;,0;'@d;iï;'@d;iï;iïo;
+color;i&o;;@;i ;	[ ;;;o;;@;;;"	13px;["font-size;i'o;;@;i ;	[ ;;;o;;@;;;"300;["font-weight;i(o;;@;i ;	[ ;;;o;;@;;;"	15px;["margin-bottom;i)o;;@;i ;	[ ;;;o;;@;;;"*'quantico_reg', helvetica, sans-serif;["font-family;i*; ["p;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["p;i%;(0;)o;*;+{ ;,0;'@;i%;'@;i%;i%o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;i.; ["span.highlight;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["	span;i-;(0o;.;'@;["highlight;i-;)o;*;+{ ;,0;'@;i-;'@;i-;i-o;;T;@;i ;	[	o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"70px auto 0px;["margin;i3; ["img;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["img;i2;(0;)o;*;+{ ;,0;'@7;i2;'@7;i2;i2o;;T;@;i ;	[
+o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i8o;;@;i ;	[ ;;;o;;@;;;"50%;["	left;i9o;;@;i ;	[ ;;;o;;@;;;"
+block;["display;i:o;;@;i ;	[ ;;;o;/;0["px;@;1"-175px;iÿQ;2[ ;i;;["margin-left;i;o;;@;i ;	[ ;;;o;;@;;;"0px;["margin-top;i<; ["img.logo;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["img;i7;(0o;.;'@h;["	logo;i7;)o;*;+{ ;,0;'@h;i7;'@h;i7;i7o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i@o;;@;i ;	[ ;;;o;;@;;;"	23px;["
+right;iA; ["img.game_packs;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["img;i?;(0o;.;'@‡;["game_packs;i?;)o;*;+{ ;,0;'@‡;i?;'@‡;i?;i?o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"	65px;["margin-left;iE; ["img.sc_button;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["img;iD;(0o;.;'@ ;["sc_button;iD;)o;*;+{ ;,0;'@ ;iD;'@ ;iD;iD; [".pre-order_section;!o;";#[o;$;#[o;%
+;#[o;.;'" ;["pre-order_section;i1;)o;*;+{ ;,0;'@±;i1;'@±;i1;i1; [".about_container;!o;";#[o;$;#[o;%
+;#[o;.;'" ;["about_container;ió;)o;*;+{ ;,0;'@¿;ió;'@¿;ió;ió; ["section.the_game;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["section;iï;(0o;.;'@Í;["the_game;iï;)o;*;+{ ;,0;'@Í;iï;'@Í;iï;iïo;
 
-;@;	[ ;;;["/**age gate styles**/;i9o;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"	120%;["height;i;o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i>o;;@;i ;	[ ;;;o;;@;;;"50%;["	left;i?o;;@;i ;	[ ;;;o;;@;;;"
-block;["display;i@o;;@;i ;	[ ;;;o;/;0["px;@;1"-200px;iÿ8;2[ ;iA;["margin-left;iAo;;@;i ;	[ ;;;o;;@;;;"
-140px;["margin-top;iBo;;@;i ;	[ ;;;o;;@;;;"
+;@;	[ ;;;["/**age gate styles**/;iKo;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"	100%;["height;iMo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;iPo;;@;i ;	[ ;;;o;;@;;;"50%;["	left;iQo;;@;i ;	[ ;;;o;;@;;;"
+block;["display;iRo;;@;i ;	[ ;;;o;/;0["px;@;1"-200px;iÿ8;2[ ;iS;["margin-left;iSo;;@;i ;	[ ;;;o;;@;;;"
+140px;["margin-top;iTo;;@;i ;	[ ;;;o;;@;;;"
 400px;["
-width;iC; ["img.btb_logo;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["img;i=;(0o;.;'@ª;["btb_logo;i=;)o;*;+{ ;,0;'@ª;i=;'@ª;i=;i=o;;T;@;i ;	[o;;@;i ;	[ ;;;o;/;0["px;@;1"
--30px;iÝ;2[ ;iG;["margin-top;iG; ["footer;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["footer;iF;(0;)o;*;+{ ;,0;'@Æ;iF;'@Æ;iF;iFo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
-800px;["height;iLo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"35%;["
-width;iOo;;@;i ;	[ ;;;o;;@;;;"
-350px;["top;iPo;;@;i ;	[ ;;;o;;@;;;"absolute;["position;iQo;;@;i ;	[ ;;;o;;@;;;"50%;["	left;iRo;;@;i ;	[ ;;;o;/;0["%;@;1"-17.5%;f
--17.5;2[ ;iS;["margin-left;iSo;;@;i ;	[ ;;;o;;@;;;"2%;["padding;iTo;;@;i ;	[ ;;;o;	;@;;;[
-o;	;{	;i ;i;i ;i ;@;0;iUo;	;@;;;"'url(../assets/images/about_bg.jpg);iUo;	;@;;;"top;iUo;	;@;;;"center;iUo;	;@;;;"no-repeat;iU;iU;["background;iUo;;@;i ;	[ ;;;o;;@;;;"5px;["-webkit-border-radius;iVo;;@;i ;	[ ;;;o;;@;;;"5px;["-moz-border-radius;iWo;;@;i ;	[ ;;;o;;@;;;"5px;["border-radius;iXo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["-moz-box-shadow;iZo;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["-webkit-box-shadow;i[o;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["box-shadow;i\; ["&.shadow;!o;";#[o;$;#[o;%
-;#[o;-;'" ;iYo;.;'@<;["shadow;iY;)o;*;+{ ;,0;'@<;iY;'@<;iY;iYo;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"center;["text-align;i`o;;@;i ;	[ ;;;o;;@;;;"	18px;["font-size;iao;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;ibo;;@;i ;	[ ;;;o;;@;;;"
+width;iU; ["img.btb_logo;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["img;iO;(0o;.;'@;["btb_logo;iO;)o;*;+{ ;,0;'@;iO;'@;iO;iOo;;T;@;i ;	[o;;@;i ;	[ ;;;o;/;0["px;@;1"
+-30px;iÝ;2[ ;iY;["margin-top;iY; ["footer;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["footer;iX;(0;)o;*;+{ ;,0;'@/;iX;'@/;iX;iXo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
+800px;["height;i^o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"35%;["
+width;iao;;@;i ;	[ ;;;o;;@;;;"
+350px;["top;ibo;;@;i ;	[ ;;;o;;@;;;"absolute;["position;ico;;@;i ;	[ ;;;o;;@;;;"50%;["	left;ido;;@;i ;	[ ;;;o;/;0["%;@;1"-17.5%;f
+-17.5;2[ ;ie;["margin-left;ieo;;@;i ;	[ ;;;o;;@;;;"2%;["padding;ifo;;@;i ;	[ ;;;o;	;@;;;[
+o;	;{	;i ;i;i ;i ;@;0;igo;	;@;;;"'url(../assets/images/about_bg.jpg);igo;	;@;;;"top;igo;	;@;;;"center;igo;	;@;;;"no-repeat;ig;ig;["background;igo;;@;i ;	[ ;;;o;;@;;;"5px;["-webkit-border-radius;iho;;@;i ;	[ ;;;o;;@;;;"5px;["-moz-border-radius;iio;;@;i ;	[ ;;;o;;@;;;"5px;["border-radius;ijo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["-moz-box-shadow;ilo;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["-webkit-box-shadow;imo;;@;i ;	[ ;;;o;;@;;;"0 0 5px #4FA199;["box-shadow;in; ["&.shadow;!o;";#[o;$;#[o;%
+;#[o;-;'" ;iko;.;'@¥;["shadow;ik;)o;*;+{ ;,0;'@¥;ik;'@¥;ik;iko;;T;@;i ;	[	o;;@;i ;	[ ;;;o;;@;;;"center;["text-align;iro;;@;i ;	[ ;;;o;;@;;;"	18px;["font-size;iso;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;ito;;@;i ;	[ ;;;o;;@;;;"
 white;["
-color;ic; ["h3;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["h3;i_;(0;)o;*;+{ ;,0;'@e;i_;'@e;i_;i_o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"center;["text-align;igo;;@;i ;	[ ;;;o;;@;;;"
-block;["display;iho;;@;i ;	[ ;;;o;;@;;;"	auto;["margin;iio;;@;i ;	[ ;;;o;;@;;;"2px;["-webkit-border-radius;ijo;;@;i ;	[ ;;;o;;@;;;"2px;["-moz-border-radius;iko;;@;i ;	[ ;;;o;;@;;;"2px;["border-radius;ilo;;@;i ;	[ ;;;o;;@;;;"*'quantico_reg', helvetica, sans-serif;["font-family;im; [")input[type=submit], input[type=text];!o;";#[o;$;#[o;%
+color;iu; ["h3;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["h3;iq;(0;)o;*;+{ ;,0;'@Î;iq;'@Î;iq;iqo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"center;["text-align;iyo;;@;i ;	[ ;;;o;;@;;;"
+block;["display;izo;;@;i ;	[ ;;;o;;@;;;"	auto;["margin;i{o;;@;i ;	[ ;;;o;;@;;;"2px;["-webkit-border-radius;i|o;;@;i ;	[ ;;;o;;@;;;"2px;["-moz-border-radius;i}o;;@;i ;	[ ;;;o;;@;;;"2px;["border-radius;i~o;;@;i ;	[ ;;;o;;@;;;"*'quantico_reg', helvetica, sans-serif;["font-family;i; [")input[type=submit], input[type=text];!o;";#[o;$;#[o;%
 ;#[o;&	;'" ;["
-input;if;(0o:Sass::Selector::Attribute;9"=;["submit;'@Ÿ:@flags0;["	type;if;(0;)o;*;+{ ;,0;'@Ÿ;ifo;$;#[o;%
-;#[o;&	;'@Ÿ;["
-input;if;(0o;@;9"=;["	text;'@Ÿ;A0;["	type;if;(0;)o;*;+{ ;,0;'@Ÿ;if;'@Ÿ;if;ifo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"30px auto;["margin;iqo;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;iro;;@;i ;	[ ;;;o;;@;;;"	none;["background;iso;;@;i ;	[ ;;;o;;@;;;"	none;["border;ito;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;iuo;;@;i ;	[ ;;;o;;@;;;"
+input;ix;(0o:Sass::Selector::Attribute;9"=;["submit;'@:@flags0;["	type;ix;(0;)o;*;+{ ;,0;'@;ixo;$;#[o;%
+;#[o;&	;'@;["
+input;ix;(0o;@;9"=;["	text;'@;A0;["	type;ix;(0;)o;*;+{ ;,0;'@;ix;'@;ix;ixo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"30px auto;["margin;iƒo;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;i„o;;@;i ;	[ ;;;o;;@;;;"	none;["background;i…o;;@;i ;	[ ;;;o;;@;;;"	none;["border;i†o;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;i‡o;;@;i ;	[ ;;;o;;@;;;"
 black;["
-color;ivo;;@;i ;	[ ;;;o;	;@;;;[
-o;	;{	;i ;i;i ;i ;@;0;iwo;	;@;;;"*url(../assets/images/nav_bg-blue.png);iwo;	;@;;;"repeat-x;iwo;	;@;;;"top;iwo;	;@;;;"	left;iw;iw;["background;iwo;;@;i ;	[ ;;;o;;@;;;"2px;["-webkit-border-radius;ixo;;@;i ;	[ ;;;o;;@;;;"2px;["-moz-border-radius;iyo;;@;i ;	[ ;;;o;;@;;;"2px;["border-radius;izo;;@;i ;	[ ;;;o;;@;;;"5px 16px;["padding;i{; ["input[type=submit];!o;";#[o;$;#[o;%
+color;iˆo;;@;i ;	[ ;;;o;	;@;;;[
+o;	;{	;i ;i;i ;i ;@;0;i‰o;	;@;;;"*url(../assets/images/nav_bg-blue.png);i‰o;	;@;;;"repeat-x;i‰o;	;@;;;"top;i‰o;	;@;;;"	left;i‰;i‰;["background;i‰o;;@;i ;	[ ;;;o;;@;;;"2px;["-webkit-border-radius;iŠo;;@;i ;	[ ;;;o;;@;;;"2px;["-moz-border-radius;i‹o;;@;i ;	[ ;;;o;;@;;;"2px;["border-radius;iŒo;;@;i ;	[ ;;;o;;@;;;"5px 16px;["padding;i; ["input[type=submit];!o;";#[o;$;#[o;%
 ;#[o;&	;'" ;["
-input;ip;(0o;@;9"=;["submit;'@;A0;["	type;ip;(0;)o;*;+{ ;,0;'@;ip;'@;ip;ipo;;T;@;i ;	[
+input;i‚;(0o;@;9"=;["submit;'@y;A0;["	type;i‚;(0;)o;*;+{ ;,0;'@y;i‚;'@y;i‚;i‚o;;T;@;i ;	[
 o;;@;i ;	[ ;;;o;;@;;;"
 white;["
-color;io;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;i€o;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;io;;@;i ;	[ ;;;o;;@;;;"center;["text-align;i‚o;;@;i ;	[ ;;;o;;@;;;"	30px;["margin-top;iƒ; ["
+color;i‘o;;@;i ;	[ ;;;o;;@;;;"+'quantico_bold', helvetica, sans-serif;["font-family;i’o;;@;i ;	[ ;;;o;;@;;;"uppercase;["text-transform;i“o;;@;i ;	[ ;;;o;;@;;;"center;["text-align;i”o;;@;i ;	[ ;;;o;;@;;;"	30px;["margin-top;i•; ["
 label;!o;";#[o;$;#[o;%
 ;#[o;&	;'" ;["
-label;i~;(0;)o;*;+{ ;,0;'@D;i~;'@D;i~;i~; ["	form;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["	form;iN;(0;)o;*;+{ ;,0;'@R;iN;'@R;iN;iN; ["#sc_form-container;!o;";#[o;$;#[o;%
-;#[o;7;'" ;["sc_form-container;iJ;)o;*;+{ ;,0;'@`;iJ;'@`;iJ;iJ; ["html, .age_gate;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["	html;i:;(0;)o;*;+{ ;,0;'@n;i:o;$;#[o;%
-;#[o;.;'@n;["age_gate;i:;)o;*;+{ ;,0;'@n;i:;'@n;i:;i:o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;iŒo;;@;i ;	[ ;;;o;;@;;;"0;["top;io;;@;i ;	[ ;;;o;;@;;;"0;["	left;iŽo;;@;i ;	[ ;;;o;;@;;;"0;["
-right;io;;@;i ;	[ ;;;o;;@;;;"0;["bottom;io;;@;i ;	[ ;;;o;;@;;;"	#000;["background-color;i‘o;
+label;i;(0;)o;*;+{ ;,0;'@­;i;'@­;i;i; ["	form;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["	form;i`;(0;)o;*;+{ ;,0;'@»;i`;'@»;i`;i`; ["#sc_form-container;!o;";#[o;$;#[o;%
+;#[o;7;'" ;["sc_form-container;i\;)o;*;+{ ;,0;'@É;i\;'@É;i\;i\; ["html, .age_gate;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["	html;iL;(0;)o;*;+{ ;,0;'@×;iLo;$;#[o;%
+;#[o;.;'@×;["age_gate;iL;)o;*;+{ ;,0;'@×;iL;'@×;iL;iLo;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;ižo;;@;i ;	[ ;;;o;;@;;;"0;["top;iŸo;;@;i ;	[ ;;;o;;@;;;"0;["	left;i o;;@;i ;	[ ;;;o;;@;;;"0;["
+right;i¡o;;@;i ;	[ ;;;o;;@;;;"0;["bottom;i¢o;;@;i ;	[ ;;;o;;@;;;"	#000;["background-color;i£o;
 
-;@;	[ ;;;["B/* change if the mask should have another color then white */;i‘o;;@;i ;	[ ;;;o;;@;;;"
-99999;["z-index;i’o;
+;@;	[ ;;;["B/* change if the mask should have another color then white */;i£o;;@;i ;	[ ;;;o;;@;;;"
+99999;["z-index;i¤o;
 
-;@;	[ ;;;["%/* makes sure it stays on top */;i’o;;@;i ;	[ ;;;o;;@;;;"0.8;["opacity;i“; ["#preloader;!o;";#[o;$;#[o;%
-;#[o;7;'" ;["preloader;i‹;)o;*;+{ ;,0;'@¿;i‹;'@¿;i‹;i‹o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
+;@;	[ ;;;["%/* makes sure it stays on top */;i¤o;;@;i ;	[ ;;;o;;@;;;"0.8;["opacity;i¥; ["#preloader;!o;";#[o;$;#[o;%
+;#[o;7;'" ;["preloader;i;)o;*;+{ ;,0;'@(;i;'@(;i;io;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"
 200px;["
-width;i—o;;@;i ;	[ ;;;o;;@;;;"
-200px;["height;i˜o;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i™o;;@;i ;	[ ;;;o;;@;;;"50%;["	left;išo;
+width;i©o;;@;i ;	[ ;;;o;;@;;;"
+200px;["height;iªo;;@;i ;	[ ;;;o;;@;;;"absolute;["position;i«o;;@;i ;	[ ;;;o;;@;;;"50%;["	left;i¬o;
 
-;@;	[ ;;;["D/* centers the loading animation horizontally one the screen */;išo;;@;i ;	[ ;;;o;;@;;;"10%;["top;i›o;
+;@;	[ ;;;["D/* centers the loading animation horizontally one the screen */;i¬o;;@;i ;	[ ;;;o;;@;;;"10%;["top;i­o;
 
-;@;	[ ;;;["B/* centers the loading animation vertically one the screen */;i›o;;@;i ;	[ ;;;o;	;@;;;""url(../assets/images/382.gif);iœ;["background-image;iœo;
+;@;	[ ;;;["B/* centers the loading animation vertically one the screen */;i­o;;@;i ;	[ ;;;o;	;@;;;""url(../assets/images/382.gif);i®;["background-image;i®o;
 
-;@;	[ ;;;[")/* path to your loading animation */;iœo;;@;i ;	[ ;;;o;;@;;;"no-repeat;["background-repeat;io;;@;i ;	[ ;;;o;;@;;;"center;["background-position;ižo;;@;i ;	[ ;;;o;	;@;;;[	o;/;0["px;@;1"-100px;i—;2[ ;iŸo;/;0[ ;@;1"0;i ;2@á;iŸo;/;0[ ;@;1"0;i ;2@á;iŸo;/;0["px;@;1"-100px;i—;2[ ;iŸ;iŸ;["margin;iŸo;
+;@;	[ ;;;[")/* path to your loading animation */;i®o;;@;i ;	[ ;;;o;;@;;;"no-repeat;["background-repeat;i¯o;;@;i ;	[ ;;;o;;@;;;"center;["background-position;i°o;;@;i ;	[ ;;;o;	;@;;;[	o;/;0["px;@;1"-100px;i—;2[ ;i±o;/;0[ ;@;1"0;i ;2@á;i±o;/;0[ ;@;1"0;i ;2@á;i±o;/;0["px;@;1"-100px;i—;2[ ;i±;i±;["margin;i±o;
 
-;@;	[ ;;;["-/* is width and height divided by two */;iŸ; ["#status;!o;";#[o;$;#[o;%
-;#[o;7;'" ;["status;i–;)o;*;+{ ;,0;'@%;i–;'@%;i–;i–o;
+;@;	[ ;;;["-/* is width and height divided by two */;i±; ["#status;!o;";#[o;$;#[o;%
+;#[o;7;'" ;["status;i¨;)o;*;+{ ;,0;'@Ž;i¨;'@Ž;i¨;i¨o;
 
-;@;	[ ;;;[" /**end pre-order section**/;i¢o:Sass::Tree::MediaNode;T;@;i ;	[o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"1050px;["
-width;i¦; ["article;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["article;i¥;(0;)o;*;+{ ;,0;'@A;i¥;'@A;i¥;i¥:@query["	only" "screen"
- and "(o;	;@;;;"max-width;i¤": o;/;0["px;@;1"1050px;i;2[ ;i¤");" ;i¤o;B;T;@;i ;	[o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"	100%;["
-width;i¬; ["article;!o;";#[o;$;#[o;%
-;#[o;&	;'" ;["article;i«;(0;)o;*;+{ ;,0;'@i;i«;'@i;i«;i«;C["	only" "screen"
- and "(o;	;@;;;"max-width;iª": o;/;0["px;@;1"1580px;i,;2[ ;iª");" ;iª;i
+;@;	[ ;;;[" /**end pre-order section**/;i´o:Sass::Tree::MediaNode;T;@;i ;	[o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"1050px;["
+width;i¸; ["article;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["article;i·;(0;)o;*;+{ ;,0;'@ª;i·;'@ª;i·;i·:@query["	only" "screen"
+ and "(o;	;@;;;"max-width;i¶": o;/;0["px;@;1"1050px;i;2[ ;i¶");" ;i¶o;B;T;@;i ;	[o;;T;@;i ;	[o;;@;i ;	[ ;;;o;;@;;;"	100%;["
+width;i¾; ["article;!o;";#[o;$;#[o;%
+;#[o;&	;'" ;["article;i½;(0;)o;*;+{ ;,0;'@Ò;i½;'@Ò;i½;i½;C["	only" "screen"
+ and "(o;	;@;;;"max-width;i¼": o;/;0["px;@;1"1580px;i,;2[ ;i¼");" ;i¼;i

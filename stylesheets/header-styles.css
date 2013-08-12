@@ -71,7 +71,7 @@ header {
   margin: auto;
   position: absolute;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -60px;
 }
 
 /* line 77, ../sass/header-styles.scss */
@@ -175,34 +175,29 @@ nav ul li a:hover {
 /**blacklist menu amends**/
 /* line 173, ../sass/header-styles.scss */
 nav .row {
-  width: 120%;
+  width: 100%;
 }
 /* line 174, ../sass/header-styles.scss */
 nav .row ul {
-  width: 110%;
-  margin-left: -10%;
+  width: 100%;
 }
-/* line 178, ../sass/header-styles.scss */
+/* line 177, ../sass/header-styles.scss */
 nav .row ul li {
-  width: 14%;
+  width: 15%;
 }
-/* line 184, ../sass/header-styles.scss */
+/* line 183, ../sass/header-styles.scss */
 nav .row .the_game, nav .row .scbl {
   padding-top: 16px;
   line-height: 18px;
 }
-/* line 189, ../sass/header-styles.scss */
-nav .row .preorder {
-  float: right;
-}
-/* line 197, ../sass/header-styles.scss */
+/* line 196, ../sass/header-styles.scss */
 nav .row .logo {
-  width: 29%;
+  width: 40%;
 }
 
 /**end amends**/
 /**pre-order button**/
-/* line 206, ../sass/header-styles.scss */
+/* line 205, ../sass/header-styles.scss */
 .pre-order_btn {
   background: transparent url(../assets/images/game_pre-order.png) top center no-repeat;
   height: 160px;
@@ -214,7 +209,7 @@ nav .row .logo {
 
 /**end pre-order button**/
 /**fixed nav**/
-/* line 218, ../sass/header-styles.scss */
+/* line 217, ../sass/header-styles.scss */
 .stuck {
   position: fixed;
   margin-top: -40px !important;

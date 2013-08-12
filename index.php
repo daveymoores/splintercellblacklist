@@ -39,9 +39,10 @@ if (isset($_COOKIE["age"]))
 
 	<meta property="og:title" content="Splinter Cell - Stop the Blacklist">
     <meta property="og:type" content="article">
-    <meta property="og:site_name" content="">
+    <meta property="og:site_name" content="Win a gaming PC with Splinter Cell Blacklist">
     <meta property="og:url" content="http://uk-microsites.ign.com/splintercellblacklist/">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://uk-microsites.ign.com/splintercellblacklist/assets/images/StopTheBlacklist_logo.png">
+    <meta property="og:description" content="Win a gaming PC with Splinter Cell Blacklist">
     <meta property="fb:admins" content="546507370">
     
     
@@ -54,6 +55,60 @@ if (isset($_COOKIE["age"]))
     <link rel="stylesheet" href="default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="stylesheets/app.css" />
 
+    
+    <style>
+    #policyNotice,
+    #policyNotice p,
+    #policyNotice a {
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 11px;
+        line-height: 11px;
+    }
+    #policyNotice a,
+    #policyNotice a:visited {
+        color: #000;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    #policyNotice {
+        position:fixed;
+        z-index: 999;
+        padding: 10px 10px 0 10px;
+        background-color: #FFFFCE;
+        color: #000;
+        border: 1px solid #000;
+    }
+    #policyNotice p {
+        margin: 0 0 11px 0;
+        padding: 0;
+    }
+    #policyNotice .close-btn {
+        position: relative;
+        padding: 4px;
+        top: -5px;
+        right: -8px;
+        float:right;
+        text-align: center;
+    }
+    #policyNotice .close-btn a,
+    #policyNotice .close-btn a:visited {
+        font-size: 14px;
+        color: #BA0D0D;
+        text-decoration: none;
+        font-weight:normal;
+    }
+    #policyNotice a:hover {
+        text-decoration: underline;
+    }
+    
+    #policyNotice {
+        width: 800px;
+        bottom: 2px;
+        left: 50%;
+        margin-left: -400px;
+    }
+    </style>
+
 
     <script src="javascripts/vendor/custom.modernizr.js"></script>
 
@@ -65,8 +120,18 @@ if (isset($_COOKIE["age"]))
 	  </style>
 	<![endif]-->
 
+
+
 </head>
 <body>
+    
+<div id="policyNotice" style="display:none">
+    <div class="close-btn">
+        <a href="#" title="Close" data-domain=".ign.com">Close</a>
+    </div>
+    <p>We use cookies and other technologies to improve your online experience. By using this Site, you consent to this use as described in our <a href="http://corp.ign.com/policies/cookie-eu" target="_blank">Cookie Policy</a>.</p>
+</div>
+
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
@@ -102,7 +167,7 @@ if (isset($_COOKIE["age"]))
             <div class="row">
                 <ul class="large-12 columns">
                     <li data-pos="the_game" class="the_game"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'stop the blacklist'])">STOP THE BLACKLIST</a></li>
-                    <li data-pos="weapons" class="weapons"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'gadgets'])">GADGETS</a></li>
+<!--                     <li data-pos="weapons" class="weapons"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'gadgets'])">GADGETS</a></li> -->
                     <li data-pos="screenshots" class="screenshots"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'screenshots'])">SCREENSHOTS</a></li>
                     <li class="logo"><a href="http://splintercell.ubi.com/blacklist/en-GB/home/index.aspx"><img src="assets/images/blacklist_logo.png" alt="Splinter Cell Blacklist Logo"/></a></li>
                     <li data-pos="scbl" class="scbl"><a href="#_" onClick="_gaq.push(['_trackEvent', 'navigation', 'clicked', 'splinter cell blacklist'])">SPLINTER CELL BLACKLIST</a></li>
@@ -121,8 +186,8 @@ if (isset($_COOKIE["age"]))
 				<img class="sam" src="assets/images/sam.png" alt="Sam Fisher">
 				<div class="holder_instructional">
 					<h3 class="tango">JOIN THE ELITE RANKS OF THE FOURTH ECHELON</h3>
-					<p>Solve one of the four intel puzzles dropping every Monday over the next four weeks, and you’ll be entered into our grand prize draw for the chance to win weekly spot prizes or our top prize of a <b>gaming PC powered by Nvidia GeForce GTX 780</b>.
-				    <br>Click the <span style="color: #AECD57;">green marker</span> on the West coast of the USA to select your first mission...</p>
+					<p>Solve one of the four intel puzzles dropping every Monday over the next four weeks, and you’ll be entered into our grand prize draw for the chance to win weekly spot prizes or our top prize of a <b><a href="http://bit.ly/135l9bf" target="_blank" style="color: #77C9BC;">PC Specialist gaming PC powered by Nvidia GeForce GTX 780</a></b>.
+				    <br>Click the <span style="color: #AECD57;">green marker</span> on the West Coast of the USA to select your first mission...</p>
                 </div>
 			</div>
 		</div>
@@ -142,7 +207,7 @@ if (isset($_COOKIE["age"]))
     <!--end flash component section-->
 
     <!--weapons section-->
-    <section class="content weapons" data-type="background" data-speed="2" id="weapons">
+  <!--   <section class="content weapons" data-type="background" data-speed="2" id="weapons">
      <div class="row">
         <div class="large-12 columns">
             <h2 class="black">GADGETS</h2>
@@ -204,14 +269,14 @@ if (isset($_COOKIE["age"]))
 			</div>
 
         </div>
-    </section>
+    </section> -->
     <!--end weapons section-->
 
     <!--screenshot section-->
     <section class="content screenshots" data-type="background" data-speed="2" id="screenshots">
     	<div class="row">
         <div class="large-12 columns">
-        	<h2>SCREENSHOTS</h2>
+        	<h2>SPLINTER CELL BLACKLIST SCREENSHOTS</h2>
 
             <div class="slider-wrapper theme-default">
                 <div id="slider" class="nivoSlider">
@@ -247,24 +312,36 @@ if (isset($_COOKIE["age"]))
         	<div class="large-12 columns">
             	<div class="about_container">
             		
-            		<h2>ABOUT THE GAME <span></span></h2>
+            		<h2>SPLINTER CELL BLACKLIST<span></span></h2>
             		<div class="empty_block">
                         <span class="full_block"></span>
                     </div>
 
-            		<p>Splinter Cell Blacklist opens with the United States government under siege and powerless to mount a traditional response to an unknown enemy. A radical terrorist group, whose members are known as the Engineers, has formed to contest America’s military presence in 153 countries around the world. The Engineers vow to enact a countdown of violence they have dubbed The Blacklist; a series of catastrophic attacks against US targets designed to inflict maximum damage and cause high-profile casualties.</p>  
+<h3>About the Game</h3>
 
-<p>To combat the threat posed by this elusive group, President Patricia Caldwell forms the Fourth Echelon. Rising from the ashes of its disgraced and disbanded predecessor agency, the Fourth Echelon is formed of both familiar and new faces alike as Anna “Grim” Grímsdóttir and Vic Coste are joined by brilliant hacker but inexperienced agent, Charlie Cole.</p>
+ 
 
-<p>The Fourth Echelon operates aboard its mobile HQ, The Paladin, and is led by Sam Fisher, a man who is equal parts shadow operative, combat specialist and black-ops legend. To facilitate his fight against the Engineers, President Caldwell grants Fisher the Fifth Freedom. This ratifies a no-questions-asked policy that enables Fisher and his team to achieve their objectives by any means necessary as they race to neutralise the Engineers before the group execute every target on the Blacklist.</p>   
+<h4>The Blacklist</h4>
 
-<p>To reflect Fisher’s freedom and ability to operate outside of established protocols, Ubisoft has broadened the potential for varied player expression in its most flexible Splinter Cell title to date. Three core styles are available to the player in Splinter Cell Blacklist: Ghost rewards a non-lethal approach, Panther facilitates graceful takedowns and Assault turns Fisher into a one-man army. All three approaches will yield results, so it’s up to each individual player to decide how best to respond to the threat posed by the Engineers.</p>
+<p>The United States has a military presence in two-thirds of countries around the world. Some of them have had enough. A group of terrorists calling themselves The Engineers initiate a terror ultimatum called the Blacklist – a deadly countdown of escalating attacks on US interests at home and abroad, which forces the President of the United States to assemble a covert operation, the Fourth Echelon, to stop the impending attacks and find out who is responsible.</p>
 
-<p>Expanding the scope of Splinter Cell Blacklist yet further is Ubisoft’s take on competitive and co-operative multiplayer, along with the ShadowNet experience. Spies vs Mercs returns with its classic 2 vs 2 mode and an expanded 4 vs 4 Blacklist edition, which adds a greater number of customisation and loadout options. As a Spy, you play from a third-person perspective and utilise Splinter Cell hallmarks like Death From Above while hacking terminals to score points. Swap roles to play as a heavily armed merc and you’ll hunt your prey in first-person mode as you seek to shut down the hack attacks.</p>
+ 
 
-<p>Meanwhile, Splinter Cell Blacklist’s co-op modes are designed to be closely integrated with the single-player narrative experience. Partnering Sam Fisher with different members of the Fourth Echelon team reveals varied mission types that draw on Blacklist’s Ghost, Panther and Assault play-styles to offer a broad range of experiences. Co-op levels feature branching paths and facilitate a flexibility of approach for whatever partnership you choose.</p>
+<h4>Fourth Echelon</h4>
 
-<p>Supporting the entire Blacklist experience is ShadowNet, which enables players to join an online Cell that best suits their in-game tactics, while also gaining access to challenges and unlocking exclusive game content. All of these elements combine to make Splinter Cell Blacklist the most comprehensive Sam Fisher experience to date. </p>
+<p>The Fourth Echelon operates aboard its mobile HQ, a heavily outfitted and customisable stealth airliner; “The Paladin”, and is led by Sam Fisher, a man who is equal parts shadow operative, combat specialist and black-ops legend. To facilitate his fight against the Engineers, the President has granted Fisher granted the Fifth Freedom; which permits implicit freedom to do whatever it takes to defend the United States; even breaking the law.</p>
+
+ 
+
+<h4>Choose your Playstyle</h4>
+
+<p>Splinter Cell Blacklist builds on the stealth roots of the franchise, while exploring new directions to embrace the realms of action and adventure. Players can define their personal play styles and be rewarded for those choices. <span class="highlight">GHOST</span> players want to remain undetected. <span class="highlight">ASSAULT</span> players rely on instincts and firepower to deal with a situation. <span class="highlight">PANTHER</span> players strike lethally from the shadows in the most efficient and deadly way.<br>What kind of Splinter Cell are you?</p>
+
+ 
+
+<h4>Multiple Game Modes</h4>
+
+<p>Control the entire game experience from the Strategic Mission Interface (SMI) and dynamically switch from epic Single Player missions across into Co-Operative missions with a buddy or AI partner and then into the Adversarial Multiplayer Spies vs Mercs Mode.</p>
 
             		<div class="pre-order_section">
             			<img class="logo" src="assets/images/sc_logo-pre-order.png" alt="">
@@ -425,6 +502,7 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
     });
 
   </script>
+
 
   <script>
 
@@ -587,6 +665,49 @@ KINECT, Xbox, Xbox 360, Xbox LIVE, and the Xbox logos are trademarks of the Micr
 });
 
   </script>
+
+    <script>
+
+    (function(){
+        var cookieName = 'persist-policy';
+        var cookieValue = 'eu';
+        var createCookie = function(name,value,days,domain) {
+            var expires = '';
+            var verifiedDomain = '';
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime()+(days*24*60*60*1000));
+                expires = '; expires='+date.toGMTString();
+            }
+            if (domain) {
+                verifiedDomain = '; domain='+domain;
+            }
+            document.cookie = name+'='+value+expires+verifiedDomain+'; path=/';
+        };
+        var readCookie = function(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        };
+        window.initPolicyWidget = function(){
+            jQuery('#policyNotice').show().find('.close-btn a').click(function(e){
+                createCookie(cookieName, cookieValue, 180, jQuery(this).data('domain'));
+                jQuery('#policyNotice').remove();
+                return false;
+            });
+        }
+        var cookieContent = readCookie(cookieName);
+        if (typeof  cookieContent === 'undefined' || cookieContent != cookieValue) {
+            jQuery(document).ready(initPolicyWidget);
+            jQuery(document).trigger('policyWidgetReady');
+        }
+    })();
+    </script>
     
   <!--begin GA script-->
   <script type="text/javascript">
